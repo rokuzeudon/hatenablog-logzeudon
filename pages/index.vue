@@ -3,8 +3,8 @@
     #container
       #container-inner
         //- header
-        Header
-        TopEditarea
+        c_Header
+        c_TopEditarea
         //- contents
         #content
           #content-inner
@@ -45,6 +45,6 @@
                     span.pager-next: <a href="#" rel="next">次のページ</a>
               aside#box1
                 #box1-inner
-            Box2
-          BottomEditarea
+            c_Box2
+          c_BottomEditarea
 </template>
