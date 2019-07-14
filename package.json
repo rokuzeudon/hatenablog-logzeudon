@@ -1,0 +1,23 @@
+{
+  "name": "hatenablog-theme-builder",
+  "version": "1.0.0",
+  "description": "はてなブログテーマのカスタマイズをスムーズにするための開発環境です。",
+  "author": "6QD",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0"
+  }
+}
