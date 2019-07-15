@@ -7,7 +7,12 @@
 */
 
 @import "node_modules/ress/dist/ress.min.css";
-@import "config/detail";
+
+@import "_variables";
+@import "_mixins";
+
+@import "hatena-config/detail";
+@import "hatena-config/design";
 
 /*!
 
