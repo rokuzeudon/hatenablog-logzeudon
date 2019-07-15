@@ -42,7 +42,8 @@
                             span.hatena-star-comment-container <img src="https://s.hatena.ne.jp/images/comment.gif" tabindex="0" alt="Comments" title="Comments" class="hatena-star-comment-button" style="cursor: pointer; margin: 0px; padding: 0px; border: none; vertical-align: middle; display: none;">
                             span.hatena-star-star-container <img src="https://cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.svg" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;">
                   .pager.autopagerize_insert_before
-                    span.pager-next: <a href="#" rel="next">次のページ</a>
+                    span.pager-next
+                      a(href="#" rel="next") 次のページ
               aside#box1
                 #box1-inner
             c_Box2
