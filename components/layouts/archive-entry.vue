@@ -19,7 +19,7 @@
       nuxt-link.archive-category-link(to="page-archive-category") はてなブログ
       nuxt-link.archive-category-link(to="page-archive-category") Adobe
     nuxt-link.entry-thumb-link(to="page-entry")
-      .entry-thumb(style="background-image: url('https://cdn.image.st-hatena.com/image/square/41be5e45a9e20944bb099fedff4e00a5ee538bc9/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_gold%2Ff232092-hekinan%2Fbn%2F201906%2Fh004-029.jpg%3F_ex%3D128x128');")
+      .entry-thumb(style="background-image: url('//data.rokuzeudon.com/blog/img/bootstrap-xd.svg');")
     .archive-entry-body
       p.entry-description テキストが入ります。テキストが入ります。 大見出し 中見出し 小見出し 大見出し 中見出し 小見出し テキストが入ります。 テキストが入ります。 テキストが入ります。 テキストが入ります。 テキストが入ります。 テキストが入ります。 数字リスト テキス…
       .social-buttons

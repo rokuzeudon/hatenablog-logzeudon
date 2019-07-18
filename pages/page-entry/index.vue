@@ -36,6 +36,9 @@
                         .entry-header-menu 編集
                       //- entry content
                       .entry-content
+                        p.mainimage
+                          span.bg(style="background:url(//data.rokuzeudon.com/blog/img/bootstrap-xd.svg) no-repeat;")
+                          img.mv(title="" src="//data.rokuzeudon.com/blog/img/bootstrap-xd.svg" alt="AdobeXDで使えるBootstrap4のテンプレートデータをつくってみた（Mac向け）")
                         p テキストが入ります
                         ul.table-of-contents
                           li 
