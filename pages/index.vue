@@ -22,5 +22,5 @@
                     span.pager-next
                       a(href="#" rel="next") 次のページ
             c_Box2
-          c_BottomEditarea
+        c_BottomEditarea
 </template>

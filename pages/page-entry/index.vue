@@ -32,7 +32,7 @@
                           nuxt-link.entry-category-link.category-diary(to="page-archive-category") はてなブログ
                           nuxt-link.entry-category-link.category-diary(to="page-archive-category") Adobe
                         .customized-header
-                          .entry-header-html 記事上
+                          c_EntryHeaderHtml
                         .entry-header-menu 編集
                       //- entry content
                       .entry-content
@@ -152,40 +152,40 @@
                                           time(pubdate="" datetime="2019-04-25T16:59:23Z" title="2019-04-25T16:59:23Z") 2019-04-26
                                       a.urllist-title-link.related-entries-title-link.urllist-title.related-entries-title(href="#") フェレットたちの最近の様子
                                       .urllist-entry-body.related-entries-entry-body 最近は特別変わったこともなく平和に元気に過ごしています。 す…
-                          .entry-footer-html 記事下
-                          .comment-box
-                            a.leave-comment-title コメントを書く
-                            ul.comment
-                              li.entry-comment.comment-hatena-user
-                                p.comment-user-name
-                                  img.hatena-id-icon(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" alt="" title="")
-                                  a.comment-user-id(href="#")
-                                    span.comment-nickname id:rokuzeudon
-                                .comment-content
-                                  p
-                                    | 返信遅くなりすいません。無事出来ました！
-                                    | ありがとうございます！
-                                p.comment-metadata
-                                  time(datetime="2019-04-27T16:26:26Z" data-relative="" data-epoch="1556382386000") 78日前
-                                  span.hatena-star-comment-container: img.hatena-star-comment-button(src="https://s.hatena.ne.jp/images/comment.gif" tabindex="0" alt="Comments" title="Comments" style="cursor: pointer; margin: 0px; padding: 0px; border: none; vertical-align: middle; display: none;")
-                                  span.hatena-star-star-container
-                                    img(src="https://cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.svg?version=a92f401ca7c30a0f4bba9d391f53f660" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;")
-                                    a(href="#")
-                                      span.hatena-big-star-star-container
-                                        img.hatena-star-user(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" tabindex="0" style="padding: 0px; border: none;")
-                                        img.hatena-star-star(src="https://s.hatena.ne.jp/images/star.gif" tabindex="0" style="padding: 0px; border: none;" alt="rokuzeudon" title="")
-                                    a(href="#")
-                                      span.hatena-big-star-star-container
-                                        img.hatena-star-user(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" tabindex="0" style="padding: 0px; border: none;")
-                                        img.hatena-star-star(src="https://s.hatena.ne.jp/images/star.gif" tabindex="0" style="padding: 0px; border: none;" alt="rokuzeudon" title="")
-                                    a(href="#")
-                                      span.hatena-big-star-star-container
-                                        img.hatena-star-user(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" tabindex="0" style="padding: 0px; border: none;")
-                                        img.hatena-star-star(src="https://s.hatena.ne.jp/images/star.gif" tabindex="0" style="padding: 0px; border: none;" alt="rokuzeudon" title="")
-                                a.comment-delete-button(href="#")
-                                  img(src="//blog.hatena.ne.jp/api/comment.delete.image?comment=17680117127084552982&amp;blog=12921228815714864405" alt="delete")
-                              li.read-more-comments
-                                a もっと読む
+                          c_EntryFooterHtml
+                        .comment-box
+                          a.leave-comment-title コメントを書く
+                          ul.comment
+                            li.entry-comment.comment-hatena-user
+                              p.comment-user-name
+                                img.hatena-id-icon(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" alt="" title="")
+                                a.comment-user-id(href="#")
+                                  span.comment-nickname id:rokuzeudon
+                              .comment-content
+                                p
+                                  | 返信遅くなりすいません。無事出来ました！
+                                  | ありがとうございます！
+                              p.comment-metadata
+                                time(datetime="2019-04-27T16:26:26Z" data-relative="" data-epoch="1556382386000") 78日前
+                                span.hatena-star-comment-container: img.hatena-star-comment-button(src="https://s.hatena.ne.jp/images/comment.gif" tabindex="0" alt="Comments" title="Comments" style="cursor: pointer; margin: 0px; padding: 0px; border: none; vertical-align: middle; display: none;")
+                                span.hatena-star-star-container
+                                  img(src="https://cdn.blog.st-hatena.com/images/theme/star/hatena-star-add-button.svg?version=a92f401ca7c30a0f4bba9d391f53f660" tabindex="0" alt="Add Star" title="Add Star" class="hatena-star-add-button" style="cursor: pointer; margin: 0px 3px; padding: 0px; border: none; vertical-align: middle;")
+                                  a(href="#")
+                                    span.hatena-big-star-star-container
+                                      img.hatena-star-user(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" tabindex="0" style="padding: 0px; border: none;")
+                                      img.hatena-star-star(src="https://s.hatena.ne.jp/images/star.gif" tabindex="0" style="padding: 0px; border: none;" alt="rokuzeudon" title="")
+                                  a(href="#")
+                                    span.hatena-big-star-star-container
+                                      img.hatena-star-user(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" tabindex="0" style="padding: 0px; border: none;")
+                                      img.hatena-star-star(src="https://s.hatena.ne.jp/images/star.gif" tabindex="0" style="padding: 0px; border: none;" alt="rokuzeudon" title="")
+                                  a(href="#")
+                                    span.hatena-big-star-star-container
+                                      img.hatena-star-user(src="https://cdn.profile-image.st-hatena.com/users/rokuzeudon/profile.png" tabindex="0" style="padding: 0px; border: none;")
+                                      img.hatena-star-star(src="https://s.hatena.ne.jp/images/star.gif" tabindex="0" style="padding: 0px; border: none;" alt="rokuzeudon" title="")
+                              a.comment-delete-button(href="#")
+                                img(src="//blog.hatena.ne.jp/api/comment.delete.image?comment=17680117127084552982&amp;blog=12921228815714864405" alt="delete")
+                            li.read-more-comments
+                              a もっと読む
                   .pager.pager-permalink.permalink
                     span.pager-prev
                       a(href="#" rel="prev") <span class="pager-arrow">« </span> こがねっちの体調が良くなかったので病院…
@@ -194,5 +194,5 @@
               aside#box1
                 #box1-inner
             c_Box2
-          c_BottomEditarea
+        c_BottomEditarea
 </template>
