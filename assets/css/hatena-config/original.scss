@@ -1,0 +1,296 @@
+.gnav  {
+  position: absolute; //ロゴの横に移動
+  top: 0;
+  left: 4.8rem;
+  width: calc(100% - 4.8rem);
+}
+.gnav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.875rem;
+  font-size: .76rem;
+  font-weight: normal;
+  background: #f2f2f2;
+}
+.gnav-items {
+  display: flex; //横並び
+  justify-content: space-around;
+  padding: 0 2%;
+  background: #f2f2f2;
+}
+.gnav-item {
+  width: 22%; //４メニュー並べる
+  height: 2.5rem;
+  list-style: none;
+  font-size: .9rem;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background: #fff;
+    border-radius: 2em;
+  }
+}
+.subnav {
+  display: none;
+  padding: 1rem;
+  list-style: none;
+}
+@include min-sm {
+  .gnav {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+  .gnav-title {
+    display: block;
+    padding: 1rem;
+    height: auto;
+    font-size: 1rem;
+  }
+  .gnav-items {
+    flex-direction: column;
+    padding: 0;
+  }
+  .gnav-item {
+    width: 12.5rem;
+    height: auto;
+    font-size: 1rem;
+    a {
+      justify-content: left;
+      padding: 1rem;
+      height: auto;
+      border-radius: 0;
+      border-bottom: 1px solid #eee;
+      color: #666;
+      &:hover {
+        color: #454545;
+        background: #f8f8f8;
+      }
+    }
+  }
+  .subnav {
+    display: block;
+  }
+}
+
+ul.share-btns {
+  display: flex;
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0 .3rem;
+  background: #f2f2f2;
+}
+.share-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 .2rem;
+  padding: .2rem .6rem;
+  font-size: .9rem;
+  height: 2rem;
+  color: #666;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: .2rem;
+  font-weight: bold;
+  &:hover {
+    color: #454545;
+    border: 1px solid #ddd;
+  }
+  img {
+    width: auto;
+    height: 1.4rem;
+  }
+  &.copied {
+    color: #666;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+  }
+}
+
+/* メインビジュアル */
+.page-entry {
+  #main {
+    position: relative;
+  }
+  .entry-header {
+    width: 100%;
+    padding: 15rem 0 0;
+  }
+  .mainimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14em;
+    overflow: hidden;
+    img {
+      width: auto;
+      min-width: 32rem;
+      height: 100%;
+      z-index: 20;
+    }
+    .bg {
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 120%;
+      height: 120%;
+      background-position: 50% 50% !important;
+      background-size: cover !important;
+      filter: blur(.2em);
+      opacity: .9;
+    }
+  }
+  p.mainimage { // 一部の古い記事用
+    background-position: center !important;
+    background-size: cover !important;
+    margin: .4em auto 0;
+  }
+}
+@include min-sm {
+  .page-entry {
+    .entry-header {
+      padding: 21rem 0 0;
+    }
+    .mainimage {
+      height: 22rem;
+      img {
+        height: auto;
+        &.mv {
+          margin: 0 3rem;
+          width: 39rem;
+          border-radius: .8rem;
+          box-shadow: 1em 1em 3em .2em rgba(0, 0, 0, 0.2);
+        }
+      }
+      .bg { display: block; }
+    }
+    p.mainimage {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.author-box {
+  margin: 0 0 1rem;
+  background: #f2f2f2;
+  border: 2px solid #eee;
+}
+.author-left, .author-right {
+  padding: 1rem;
+  width: 100%;
+}
+.author-left {
+  text-align: center;
+  vertical-align: middle;
+  background:#fff;
+  dl {
+    margin: 0;
+    font-weight: bold;
+  }
+  dd {
+    margin: 0;
+    font-size: .8em;
+    font-weight: normal;
+    color: #999;
+  }
+}
+.author-right {
+  p {
+    margin: 0 0 1rem;
+    font-size: .9rem;
+  }
+}
+.author-btns {
+  display: flex;
+}
+.author-btn {
+  display: flex;
+  align-items: center;
+  margin: 0 .4rem 0 0;
+  padding: .4rem .6rem;
+  font-size: .9rem;
+  color: #666;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: .2rem;
+  font-weight: bold;
+  line-height: 1;
+  img {
+    height: 1rem;
+    margin: 0 .4rem 0 0;
+  }
+  &:hover {
+    color: #454545;
+    border: 1px solid #ddd;
+  }
+}
+@include min-sm {
+  .author-box {
+    display: flex;
+    align-items: center;
+  }
+  .author-left {
+    width: 16rem;
+  }
+  .author-right {
+    padding: 1rem;
+    box-sizing: border-box;
+    line-height: 1.6;
+    p {
+      margin: 0 0 1em;
+    }
+  }
+}
+
+
+  // original layout
+  .about-box a {
+    display: block;
+  }
+  .twitter::before, .hatenablog::before, .portfolio::before, .feedly::before, {
+    display: inline-block;
+    font: 1.2em/1 blogicon;
+    vertical-align: text-bottom;
+    margin: 0 .4em 0 0;
+  }
+  .twitter::before {
+    content: "\f035";
+  }
+  .hatenablog::before {
+    content: "\f000";
+  }
+  .portfolio::before {
+    content: "\f03e";
+  }
+  .feedly::before {
+    content: "\f04e";
+  }
+  .aboutme-icon img { display: block }
+  #privacy.about-box {
+    padding: 1.6rem;
+    background: #f2f2f2;
+    a {
+      display: inline;
+    }
+  }
+  // info dl
+  dl {
+    order: 3;
+  }
+  dt {
+    margin: 0 0 .2em;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #666;
+  }
+  dd {
+    margin: .5rem 0 1rem;
+  }
