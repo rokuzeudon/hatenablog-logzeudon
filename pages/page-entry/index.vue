@@ -5,6 +5,16 @@
         //- header
         c_Header
         c_TopEditarea
+        #top-box
+          .breadcrumb
+            .breadcrumb-inner
+              a.breadcrumb-link(href="https://blog.rokuzeudon.com/"): span トップ
+              span.breadcrumb-gt &gt;
+              span.breadcrumb-child
+                a.breadcrumb-child-link(href="https://blog.rokuzeudon.com/category/%E3%81%A4%E3%81%8F%E3%81%A3%E3%81%9F"): span つくった
+              span.breadcrumb-gt &gt;
+              span.breadcrumb-child
+                span AdobeXDで使えるBootstrap4のテンプレートデータをつくってみた（Mac向け）
         //- contents
         #content
           #content-inner
