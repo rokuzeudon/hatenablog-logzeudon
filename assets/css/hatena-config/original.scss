@@ -134,6 +134,9 @@ ul.share-btns {
       min-width: 32rem;
       height: 100%;
       z-index: 20;
+      &.mv {
+        box-shadow: none;
+      }
     }
     .bg {
       position: absolute;
