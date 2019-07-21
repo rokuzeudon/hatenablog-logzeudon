@@ -272,7 +272,10 @@ ul.share-btns {
   .feedly::before {
     content: "\f04e";
   }
-  .aboutme-icon img { display: block }
+  .aboutme-icon img {
+    display: block;
+    box-shadow: none;
+  }
   #privacy.about-box {
     padding: 0 1.6rem;
     background: #f2f2f2;
