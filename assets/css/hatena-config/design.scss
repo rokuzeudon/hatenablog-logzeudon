@@ -560,6 +560,9 @@ p.comment-metadata {
 ul.related-entries {
   margin: 0 0 1rem;
   padding: 0;
+  li {
+    margin: 0 0 .8rem;
+  }
 }
 .related-entries-image {
   width: 7.5rem;
