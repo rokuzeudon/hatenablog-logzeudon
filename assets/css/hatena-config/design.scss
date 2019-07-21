@@ -649,6 +649,12 @@ ul.related-entries {
   margin: 2rem 0;
 }
 
+.entry-footer {
+  .share-btns, .author-box, .hatena-star-container {
+    margin: 0 0 2rem;
+  }
+}
+
 // page-entry
 
 @include min-sm { // PCで右コンテンツをスクロールさせる
