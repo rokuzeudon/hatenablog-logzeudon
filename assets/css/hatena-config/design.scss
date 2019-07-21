@@ -340,6 +340,10 @@ a {
   p {
     line-height: 1.9;
   }
+  img {
+    vertical-align: top;
+    box-shadow: 0 0.1rem 0.6rem 0 rgba(67,0,0,.08);
+  }
   ul, ol {
     padding: 0 0 0 1.3rem;
     ul, ol {
