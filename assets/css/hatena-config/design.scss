@@ -125,7 +125,7 @@ a {
 .related-entries-item-inner {
   display: grid;
   grid-template: "RelatedA RelatedC" auto
-                 "RelatedA RelatedB" 1fr
+                 "RelatedA RelatedB" auto
                  /7.5rem auto;
   box-shadow: 0 .1rem .6rem 0 rgba(67, 0, 0, 0.08);
 }
@@ -572,7 +572,7 @@ ul.related-entries {
 }
 .related-entries-image {
   width: 7.5rem;
-  height: 7.5rem;
+  height: 100%;
   margin: 0 1rem 0 0 !important;
 }
 .related-entries-title-link {
@@ -585,7 +585,19 @@ ul.related-entries {
   font-weight: bold;
 }
 .related-entries-date-link {
+  margin: 0 0 .8rem;
   padding: 0 .8rem;
+}
+.page-entey {
+  .related-entries-image-link {
+    overflow: hidden;
+    height:100%;
+  }
+  .related-entries-image {
+    margin: 0 !important;
+    height:100%;
+    width: auto;
+  }
 }
 
 .search-form, .search-result-form {
