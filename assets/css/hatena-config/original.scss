@@ -299,3 +299,11 @@ ul.share-btns {
   dd {
     margin: .5rem 0 1rem;
   }
+
+  .archive-nav {
+    list-style: none;
+  }
+  .archive-nav-item {
+    display: inline-block;
+    margin: 0 .8rem .8rem 0;
+  }

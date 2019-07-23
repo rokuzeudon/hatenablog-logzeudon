@@ -670,7 +670,13 @@ ul.related-entries {
 }
 
 .archive-header-category {
-  margin: 2rem 0;
+  margin: 1.2rem 0;
+  .archive-heading {
+    font-size: 1.6rem;
+    @include min-lg {
+      font-size: 2rem;
+    }
+  }
 }
 
 .entry-footer {
