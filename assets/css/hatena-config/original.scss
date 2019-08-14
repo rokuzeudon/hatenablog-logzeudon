@@ -253,57 +253,35 @@ ul.share-btns {
 }
 
 
-  // original layout
-  .about-box a {
-    display: block;
+// original layout
+.about-box img {
+  box-shadow: none;
+}
+.feedly::before {
+  display: inline-block;
+  font: 1.2em/1 blogicon;
+  vertical-align: text-bottom;
+  margin: 0 .4em 0 0;
+  color: #2bb24c;
+}
+.feedly::before { content: "\f04e" }
+#privacy.about-box {
+  padding: .02em 1.6rem;
+  background: #f2f2f2;
+  a {
+    display: inline;
   }
-  .twitter::before, .hatenablog::before, .portfolio::before, .feedly::before, {
-    display: inline-block;
-    font: 1.2em/1 blogicon;
-    vertical-align: text-bottom;
-    margin: 0 .4em 0 0;
-  }
-  .twitter::before {
-    content: "\f035";
-  }
-  .hatenablog::before {
-    content: "\f000";
-  }
-  .portfolio::before {
-    content: "\f03e";
-  }
-  .feedly::before {
-    content: "\f04e";
-  }
-  .aboutme-icon img {
-    display: block;
-    box-shadow: none;
-  }
-  #privacy.about-box {
-    padding: 0 1.6rem;
-    background: #f2f2f2;
-    a {
-      display: inline;
-    }
-  }
-  // info dl
-  dl {
-    order: 3;
-  }
-  dt {
-    margin: 0 0 .2em;
-    font-size: .9rem;
-    font-weight: bold;
-    color: #666;
-  }
-  dd {
-    margin: .5rem 0 1rem;
-  }
-
-  .archive-nav {
-    list-style: none;
-  }
-  .archive-nav-item {
-    display: inline-block;
-    margin: 0 .8rem .8rem 0;
-  }
+}
+// info dl
+dl {
+  order: 3;
+}
+dt {
+  margin: 0 0 .2em;
+  font-size: .9rem;
+  font-weight: bold;
+  color: #666;
+}
+dd {
+  margin: .5rem 0 1rem;
+}
