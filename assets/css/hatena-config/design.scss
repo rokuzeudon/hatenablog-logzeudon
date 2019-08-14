@@ -48,6 +48,13 @@ a {
   background-color: #f2f2f2;
 }
 
+#blog-title {
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+  @include min-sm {
+    box-shadow: none;
+  }
+}
+
 #blog-title-inner { // ヘッダー画像を正方形配置
   margin: .4rem 0 0 .6rem;
   width: 4rem;
@@ -117,7 +124,7 @@ a {
   grid-template: "ArchiveC ArchiveA"
                  "ArchiveC ArchiveD"
                  /7.5rem auto;
-  box-shadow: 0 .1rem .6rem 0 rgba(67, 0, 0, 0.08);
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, .06);
   position: relative;
   z-index: 20;
 }
@@ -127,7 +134,7 @@ a {
   grid-template: "RelatedA RelatedC" auto
                  "RelatedA RelatedB" auto
                  /7.5rem auto;
-  box-shadow: 0 .1rem .6rem 0 rgba(67, 0, 0, 0.08);
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, .06);
 }
 
 .entry-header {
@@ -169,10 +176,6 @@ a {
     width: 2rem;
     background: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,.02));
   }
-}
-
-#blog-title {
-  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .entry-inner, .pager, #box2-inner {
