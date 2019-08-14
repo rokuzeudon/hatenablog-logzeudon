@@ -1,5 +1,6 @@
 <template>
 <div class="entry-header-html">
+<!--ここから-->
 
 <ul class="share-btns">
   <li>
@@ -22,5 +23,6 @@
   </li>
 </ul>
 
+<!--ここまで-->
 </div>
 </template>

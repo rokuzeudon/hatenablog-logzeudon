@@ -1,7 +1,10 @@
 <template>
 <div id="bottom-editarea">
+<!--ここから-->
 
 <footer id="footer">
+  <iframe src="https://blog.hatena.ne.jp/rokuzeudon/rokuzeudon.hatenablog.jp/subscribe/iframe" allowtransparency="true" frameborder="0" scrolling="no" width="150" height="28"></iframe>
+
   <p><a href="/about">このブログについて</a>｜<a href="/about#privacy">プライバシーポリシー</a></p>
   <p>©︎ rokuzeudon 2018</p>
 </footer>
@@ -19,5 +22,6 @@
   });
 </script>
 
+<!--ここまで-->
 </div>
 </template>

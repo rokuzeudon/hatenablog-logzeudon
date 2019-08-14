@@ -1,5 +1,6 @@
 <template>
 <div class="entry-footer-html">
+  <!--ここから-->
 
 <div class="hatena-module-title">記事を共有する</div>
 <ul class="share-btns">
@@ -42,5 +43,6 @@
   </div>
 </div>
 
+<!--ここまで-->
 </div>
 </template>
