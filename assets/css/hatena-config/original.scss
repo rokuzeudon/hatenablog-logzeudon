@@ -252,8 +252,7 @@ ul.share-btns {
   }
 }
 
-
-// original layout
+// page-about
 .about-box img {
   box-shadow: none;
 }
@@ -272,7 +271,6 @@ ul.share-btns {
     display: inline;
   }
 }
-// info dl
 dl {
   order: 3;
 }
@@ -284,4 +282,13 @@ dt {
 }
 dd {
   margin: .5rem 0 1rem;
+}
+
+// page-archive
+.archive-nav {
+  list-style: none;
+}
+.archive-nav-item {
+  display: inline-block;
+  margin: 0 .8rem .8rem 0;
 }
