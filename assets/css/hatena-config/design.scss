@@ -28,7 +28,6 @@ body {
 
 // utility
 
-
 html {
   @include min-lg { font-size: 18px }
   @include min-xl { font-size: 20px }
@@ -71,7 +70,7 @@ a {
   }
 }
 
-// layout
+// grid layout
 
 #blog-title      { grid-area: ContainerA }
 #top-editarea    { grid-area: ContainerB }
@@ -158,14 +157,11 @@ a {
   padding: 2rem 0 0;
 }
 
-#content {
-
-}
+// base layout
 
 #main-inner {
   position: relative;
   padding: 1rem;
-  box-sizing: border-box;
   &::before {
     content: "";
     display: block;
@@ -242,6 +238,7 @@ a {
   -ms-overflow-style: none;
   @include min-sm {
     padding: 0 0 0 1rem;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
   }
 }
 .page-entry .breadcrumb { // blog.cssを上書き
@@ -249,20 +246,13 @@ a {
 }
 .breadcrumb {
   font-size: .8rem;
-  a {
-    font-weight: bold;
-  }
+  a { font-weight: bold }
 }
 .breadcrumb-gt {
   display: inline-block;
   margin: 0 .8em;
   color: #999;
   transform: scaleX(.6);
-}
-@include min-sm {
-  #top-box {
-    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
-  }
 }
 
 // pager
@@ -327,6 +317,8 @@ a {
     border-radius: 2em;
   }
 }
+
+// entry
 
 .entry-content {
   word-break: break-word;
@@ -484,7 +476,7 @@ ul.table-of-contents {
   }
 }
 
-p.entry-footer-section {
+.entry-footer-section {
   margin: 1rem 0 0;
 }
 
@@ -508,6 +500,7 @@ p.entry-footer-section {
     border: 1px solid #ddd;
   }
 }
+
 .comment-box {
   margin: 0 0 2rem;
   padding: 1rem;
@@ -537,7 +530,7 @@ p.entry-footer-section {
     border-radius: 3px;
   }
 }
-p.comment-user-name {
+.comment-user-name {
   margin: -.2rem 0 .2rem;
   font-weight: bold;
 }
@@ -548,7 +541,7 @@ p.comment-user-name {
     line-height: 1.4;
   }
 }
-p.comment-metadata {
+.comment-metadata {
   margin: 0;
 }
 
@@ -566,7 +559,7 @@ p.comment-metadata {
   color: #666;
 }
 
-ul.related-entries {
+.related-entries {
   margin: 0 0 1rem;
   padding: 0;
   li {
@@ -591,17 +584,6 @@ ul.related-entries {
   margin: 0 0 .8rem;
   padding: 0 .8rem;
 }
-.page-entey {
-  .related-entries-image-link {
-    overflow: hidden;
-    height:100%;
-  }
-  .related-entries-image {
-    margin: 0 !important;
-    height:100%;
-    width: auto;
-  }
-}
 
 .search-form, .search-result-form {
   display: flex;
@@ -611,13 +593,14 @@ ul.related-entries {
   background: #fff;
   border: 2px solid #f2f2f2;
   max-width: none;
-  
 }
+
 .search-module-input, .search-result-form .search-result-input {
   width: 100%;
   padding: .5em 0 .5em 1em;
   height: auto;
 }
+
 .search-module-button, .search-result-form .search-result-button {
   display: block;
   position: relative;
@@ -632,6 +615,7 @@ ul.related-entries {
     opacity: .3;
   }
 }
+
 .search-result {
   margin: 2rem 0;
 }

@@ -33,11 +33,6 @@
     border-radius: 2em;
   }
 }
-.subnav {
-  display: none;
-  padding: 1rem;
-  list-style: none;
-}
 @include min-sm {
   .gnav {
     position: relative;
@@ -71,15 +66,11 @@
       }
     }
   }
-  .subnav {
-    display: block;
-  }
 }
 
-ul.share-btns {
+.share-btns {
   display: flex;
   list-style: none;
-  margin: 0 0 1rem;
   padding: 0 .4rem;
   background: #f2f2f2;
 }
@@ -88,13 +79,13 @@ ul.share-btns {
   align-items: center;
   margin: .6rem .2rem;
   padding: .2rem .6rem;
-  font-size: .9rem;
   height: 2rem;
+  font-size: .9rem;
+  font-weight: bold;
   color: #666;
   background: #fff;
   border: 1px solid transparent;
   border-radius: .2rem;
-  font-weight: bold;
   &:hover {
     color: #454545;
     border: 1px solid #ddd;
@@ -110,7 +101,7 @@ ul.share-btns {
   }
 }
 
-/* メインビジュアル */
+// メインビジュアル
 .page-entry {
   #main {
     position: relative;
@@ -119,67 +110,67 @@ ul.share-btns {
     width: 100%;
     padding: 15rem 0 0;
   }
-  .mainimage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.mainimage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 14em;
+  overflow: hidden;
+  img {
+    width: auto;
+    min-width: 32rem;
+    height: 100%;
+    z-index: 20;
+    &.mv {
+      box-shadow: none;
+    }
+  }
+  .bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 14em;
-    overflow: hidden;
-    img {
-      width: auto;
-      min-width: 32rem;
-      height: 100%;
-      z-index: 20;
-      &.mv {
-        box-shadow: none;
-      }
-    }
-    .bg {
-      position: absolute;
-      top: -10%;
-      left: -10%;
-      width: 120%;
-      height: 120%;
-      background-position: 50% 50% !important;
-      background-size: cover !important;
-      filter: brightness(1.1) blur(5rem);
-      opacity: .9;
-    }
-  }
-  p.mainimage { // 一部の古い記事用
-    background-position: center !important;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-position: 50% 50% !important;
     background-size: cover !important;
-    margin: .4em auto 0;
+    filter: brightness(1.1) blur(5rem);
+    opacity: .9;
   }
+}
+p.mainimage { // 一部の古い記事用
+  background-position: center !important;
+  background-size: cover !important;
+  margin: .4em auto 0;
 }
 @include min-sm {
   .page-entry {
     .entry-header {
       padding: 21rem 0 0;
     }
-    .mainimage {
-      height: 22rem;
-      img {
-        height: auto;
-        &.mv {
-          margin: 0 3rem;
-          width: 39rem;
-          border-radius: .8rem;
-        }
+  }
+  .mainimage {
+    height: 22rem;
+    img {
+      height: auto;
+      &.mv {
+        margin: 0 3rem;
+        width: 39rem;
+        border-radius: .8rem;
       }
-      .bg { display: block; }
     }
-    p.mainimage {
-      margin: 0 auto;
-    }
+    .bg { display: block; }
+  }
+  p.mainimage {
+    margin: 0 auto;
   }
 }
 
-
+// この記事を書いた人
 .author-box {
   margin: 0 0 1rem;
   background: #f2f2f2;
@@ -209,29 +200,16 @@ ul.share-btns {
     margin: 0 0 1rem;
     font-size: .9rem;
   }
-}
-.author-btns {
-  display: flex;
-}
-.author-btn {
-  display: flex;
-  align-items: center;
-  margin: 0 .4rem 0 0;
-  padding: .4rem .6rem;
-  font-size: .9rem;
-  color: #666;
-  background: #fff;
-  border: 1px solid transparent;
-  border-radius: .2rem;
-  font-weight: bold;
-  line-height: 1;
-  img {
-    height: 1rem;
-    margin: 0 .4rem 0 0;
+  .share-btns {
+    margin: 0;
+    padding: 0;
   }
-  &:hover {
-    color: #454545;
-    border: 1px solid #ddd;
+  .share-btn {
+    margin: 0 .4rem 0 0;
+    img {
+      height: 1rem;
+      margin: 0 .4rem 0 0;
+    }
   }
 }
 @include min-sm {
@@ -242,14 +220,6 @@ ul.share-btns {
   .author-left {
     width: 16rem;
   }
-  .author-right {
-    padding: 1rem;
-    box-sizing: border-box;
-    line-height: 1.6;
-    p {
-      margin: 0 0 1em;
-    }
-  }
 }
 
 // page-about
@@ -257,22 +227,19 @@ ul.share-btns {
   box-shadow: none;
 }
 .feedly::before {
-  display: inline-block;
+  content: "\f04e";
   font: 1.2em/1 blogicon;
+  display: inline-block;
   vertical-align: text-bottom;
   margin: 0 .4em 0 0;
   color: #2bb24c;
 }
-.feedly::before { content: "\f04e" }
 #privacy.about-box {
   padding: .02em 1.6rem;
   background: #f2f2f2;
   a {
     display: inline;
   }
-}
-dl {
-  order: 3;
 }
 dt {
   margin: 0 0 .2em;
