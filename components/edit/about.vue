@@ -16,10 +16,10 @@
     </div>
     <div class="author-right">
       <p>名古屋で働いている、UI/UXについて考えるのが好きなWebデザイナーです。現在はインハウスで自社開発ツールのデザインに携わっています。</p>
-      <div class="author-btns">
-        <a href="https://twitter.com/rokuzeudon" class="author-btn"><img src="//data.rokuzeudon.com/blog/img/icn-twitter.svg" alt="Twitter"> フォロー</a>
-        <a href="http://blog.hatena.ne.jp/rokuzeudon/blog.rokuzeudon.com/subscribe" onclick="window.open('http://blog.hatena.ne.jp/rokuzeudon/blog.rokuzeudon.com/subscribe', '', 'width=500,height=400'); return false;" class="author-btn"><img src="//data.rokuzeudon.com/blog/img/icn-hatenablog.svg" alt="はてなブログ"> 読者登録</a>
-        <a class="feedly author-btn" href="//feedly.com/i/subscription/feed/https://blog.rokuzeudon.com/feed" target="_blank">Feedly登録</a>
+      <div class="share-btns">
+        <a href="https://twitter.com/rokuzeudon" class="share-btn"><img src="//data.rokuzeudon.com/blog/img/icn-twitter.svg" alt="Twitter"> フォロー</a>
+        <a href="http://blog.hatena.ne.jp/rokuzeudon/blog.rokuzeudon.com/subscribe" onclick="window.open('http://blog.hatena.ne.jp/rokuzeudon/blog.rokuzeudon.com/subscribe', '', 'width=500,height=400'); return false;" class="share-btn"><img src="//data.rokuzeudon.com/blog/img/icn-hatenablog.svg" alt="はてなブログ"> 読者登録</a>
+        <a class="feedly share-btn" href="//feedly.com/i/subscription/feed/https://blog.rokuzeudon.com/feed" target="_blank">Feedly登録</a>
       </div>
     </div>
   </div>
