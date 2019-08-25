@@ -147,10 +147,10 @@ a {
 
 .entry-footer {
   display: grid;
-  grid-template: "EntryFooterC" auto
-                 "EntryFooterA" auto
+  grid-template: "EntryFooterA" auto
                  "EntryFooterB" auto
                  "EntryFooterD" auto
+                 "EntryFooterC" auto
                  /auto;
   border-top: 1px solid #ddd;
   margin: 2rem 0 0;
@@ -667,7 +667,7 @@ ul.table-of-contents {
 }
 
 .entry-footer {
-  .share-btns, .author-box, .hatena-star-container {
+  .share-btns, .author-box, .hatena-star-container, .entry-footer-modules {
     margin: 0 0 2rem;
   }
 }
