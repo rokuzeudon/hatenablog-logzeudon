@@ -45,6 +45,9 @@ a {
 
 .header-image-only #blog-title {
   background-color: #f2f2f2;
+  @include min-sm {
+    background-color: transparent;
+  }
 }
 
 #blog-title {
@@ -56,17 +59,15 @@ a {
 
 #blog-title-inner { // ヘッダー画像を正方形配置
   margin: .4rem 0 0 .6rem;
-  width: 4rem;
+  width: 3rem;
   height: 4rem !important;
   background-image: url('//data.rokuzeudon.com/blog/img/6qd.svg') !important;
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
   @include min-sm {
-    margin: 0;
-    width: 12.5rem;
-    height: 12.5rem !important;
-    border-radius: 0;
+    margin: 2rem auto 0;
+    width: 10.5rem;
+    height: 10.5rem !important;
   }
 }
 
