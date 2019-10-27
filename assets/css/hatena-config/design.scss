@@ -7,6 +7,10 @@ body {
   font-family: "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
 }
 
+h1 {
+  font-weight: 500;
+}
+
 .date, .urllist-date-link {
   font-family: 'Roboto', sans-serif;
   font-size: .76rem;
@@ -447,7 +451,7 @@ ul.table-of-contents {
     display: inline-block;
     color: #666;
     margin: 0 0 .5rem;
-    font-weight: bold;
+    font-weight: 500;
   }
   li {
     margin: 0;
@@ -507,7 +511,7 @@ ul.table-of-contents {
   background: #fff;
   border: 1px solid transparent;
   border-radius: .2rem;
-  font-weight: bold;
+  font-weight: 500;
   &:hover {
     color: #454545;
     border: 1px solid #ddd;
@@ -545,7 +549,7 @@ ul.table-of-contents {
 }
 .comment-user-name {
   margin: -.2rem 0 .2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 .comment-content {
   word-wrap: break-word;
@@ -568,7 +572,7 @@ ul.table-of-contents {
 .hatena-module-title {
   margin: 0 0 .4rem;
   font-size: .9rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #666;
 }
 
@@ -591,7 +595,7 @@ ul.table-of-contents {
   line-height: 1.4;
   letter-spacing: .04rem;
   color: #454545;
-  font-weight: bold;
+  font-weight: 500;
 }
 .related-entries-date-link {
   margin: 0 0 .8rem;
