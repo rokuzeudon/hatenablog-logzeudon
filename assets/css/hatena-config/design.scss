@@ -342,12 +342,49 @@ a {
   h3, h4, h5, p, ul, ol, dl, table, blockquote, pre, .hatena-asin-detail {
     margin: 1.5em 0;
   }
+  h3, h4, h5 {
+    position: relative;
+    font-weight: 500;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #aaa;
+    }
+  }
+  h3 {
+    font-size: 1.5rem;
+    padding: 0 0 .8rem;
+    &::before {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: .1rem;
+    }
+  }
+  h4 {
+    font-size: 1.4rem;
+    padding: .2rem 0 .2rem 1.2rem;
+    &::before {
+      top: 0;
+      left: 0;
+      width: .3rem;
+      height: 100%;
+    }
+  }
+  h5 {
+    font-size: 1.2rem;
+    padding: 0 0 0 1rem;
+    &::before {
+      top: 0;
+      left: 0;
+      width: .2rem;
+      height: 100%;
+    }
+  }
   ul > ul, ul > ol, ol > ul, ol > ol {
     margin: 0 0 0 1em;
   }
-  h3 { font-size: 1.5rem; }
-  h4 { font-size: 1.3rem; }
-  h5 { font-size: 1.1rem; }
   p {
     line-height: 1.9;
   }
