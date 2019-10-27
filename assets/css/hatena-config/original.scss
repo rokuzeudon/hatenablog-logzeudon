@@ -48,21 +48,24 @@
   }
   .gnav-items {
     flex-direction: column;
-    padding: 1rem;
-    background: transparent;
+    margin: .6rem 0 0;
+    padding: .8rem 1rem;
+    background: #f2f2f2;
   }
   .gnav-item {
+    margin: .3rem 0;
     width: 100%;
     height: auto;
-    font-size: 1rem;
+    font-size: .9rem;
     a {
-      justify-content: left;
-      padding: .6rem;
-      height: auto;
+      position: relative;
       color: #666;
+      font-weight: 500;
+      border: 1px solid transparent;
+      border-radius: .2rem;
       &:hover {
         color: #454545;
-        background: #f8f8f8;
+        border: 1px solid #ddd;
       }
     }
   }
