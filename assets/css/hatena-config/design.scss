@@ -20,7 +20,7 @@ body {
 // hidden
 
 .entry-description,
-.archive-entry .categories,
+.archive-entry .categories .archive-category-link,
 .archive-entry-body,
 .pager-arrow {
   display: none;
@@ -178,6 +178,22 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 0 3rem;
+}
+
+.archive-entry .categories .archive-category-link:first-child {
+  display: block;
+  position: absolute;
+  right: .8rem;
+  bottom: .8rem;
+  padding: .2em .6em;
+  font-size: .7rem;
+  color: #666;
+  background: #ededed;
+  border-radius: 1rem;
+  &:hover {
+    color: #333;
+    background: #ddd;
+  }
 }
 
 .page-archive #content-inner {
