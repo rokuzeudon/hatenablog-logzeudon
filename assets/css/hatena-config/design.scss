@@ -55,14 +55,19 @@ a {
 }
 
 #blog-title {
+  z-index: 1;
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
   @include min-sm {
     box-shadow: none;
   }
 }
 
+#top-editarea {
+  z-index: 1;
+}
+
 #blog-title-inner { // ヘッダー画像を正方形配置
-  margin: .4rem 0 0 1rem;
+  margin: 1rem 0 0 1rem;
   width: 3rem;
   height: 4rem !important;
   background-image: url('//data.rokuzeudon.com/blog/img/6qd.svg') !important;
@@ -97,7 +102,7 @@ a {
 
 #container-inner { // スマホ１カラム、PC２カラム
   display: grid;
-  grid-template: "ContainerA" 4.4rem
+  grid-template: "ContainerA" 6rem
                  "ContainerB" auto
                  "ContainerC" auto
                  "ContainerE" auto
@@ -199,8 +204,16 @@ a {
     background: #ddd;
   }
 }
+@include min-sm {
+  .page-archive #main-inner {
+    padding: 4rem 1rem 2rem;
+  }
+  .page-archive-category #main-inner {
+    padding: 2rem 1rem;
+  }
+}
 
-.page-archive #content-inner {
+.page-archive #content {
   background: #f8f8f8;
 }
 
@@ -217,7 +230,7 @@ a {
   border-radius: .4rem;
   z-index: 20;
   @include min-sm {
-    margin: 0 1rem 1.6rem;
+    margin: 0 1rem 2rem;
   }
 }
 
@@ -363,7 +376,7 @@ a {
     }
   }
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: .2rem 0 .2rem 1.2rem;
     &::before {
       top: 0;
@@ -373,7 +386,7 @@ a {
     }
   }
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0 0 0 1rem;
     &::before {
       top: 0;
@@ -696,13 +709,13 @@ ul.table-of-contents {
   padding: 0 1rem 2rem;
   background: #f2f2f2;
   text-align: center;
-  font-size: .9rem;
+  font-size: .8rem;
   @include min-sm {
     display: flex;
     padding: 0 1rem 1rem;
     background: transparent;
     text-align: left;
-    font-size: .8rem;
+    font-size: .7rem;
     align-items: flex-end;
     a {
       display: inline-block;
