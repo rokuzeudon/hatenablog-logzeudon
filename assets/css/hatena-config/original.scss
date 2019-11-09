@@ -20,10 +20,11 @@
   background: #f8f8f8;
 }
 .gnav-item {
-  width: 22%; //４メニュー並べる
+  width: 30%; //４メニュー並べる
   height: 2.5rem;
   list-style: none;
   font-size: .9rem;
+  font-weight: 500;
   a {
     display: flex;
     justify-content: center;

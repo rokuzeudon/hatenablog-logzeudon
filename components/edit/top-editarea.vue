@@ -7,7 +7,6 @@
   <ul class="gnav-items">
     <li class="gnav-item"><a href="/archive/category/活動">活動</a></li>
     <li class="gnav-item"><a href="/archive/category/学習">学習</a></li>
-    <li class="gnav-item"><a href="/archive/category/備忘">備忘</a></li>
     <li class="gnav-item"><a href="/archive/category/随筆">随筆</a></li>
   </ul>
 </nav>
