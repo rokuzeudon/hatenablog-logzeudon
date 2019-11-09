@@ -78,7 +78,10 @@ a {
                    "ContainerE ContainerC" auto
                    / 12.5rem auto;
   }
-  .page-index #container-inner,  .page-about #container-inner { // パンくずがないページの調整
+  // パンくずがないページの調整
+  .page-index #container-inner,
+  .page-about #container-inner,
+  .page-archive-category-name #container-inner {
     grid-template: "ContainerA ContainerC" 12.5rem
                    "ContainerB ContainerC" auto
                    "ContainerE ContainerC" auto
