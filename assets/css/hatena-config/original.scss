@@ -79,7 +79,7 @@
   padding: 0 .4rem;
   background: #f2f2f2;
 }
-.share-btn, .leave-comment-title, .hatena-module-category .hatena-urllist a {
+.share-btn, .leave-comment-title, .hatena-module-category .hatena-urllist a, .archive-nav-link {
   display: flex;
   align-items: center;
   margin: .6rem .2rem;
@@ -253,4 +253,9 @@ dd {
 .archive-nav-item {
   display: inline-block;
   margin: 0 .8rem .8rem 0;
+}
+.archive-nav-link {
+  position: relative;
+  margin: 0;
+  box-shadow: 0 .8em 1em -.6em  rgba(0, 0, 0, 0.06);
 }
