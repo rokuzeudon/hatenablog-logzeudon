@@ -3,7 +3,7 @@
 <!--ここから-->
 
 <nav class="gnav">
-  <h2 class="gnav-title">Webデザイナー<a href="/about">@rokuzeudon</a>のブログ</h2>
+  <h2 class="gnav-title"><a href="/about">@rokuzeudon</a>'s Blog</h2>
   <ul class="gnav-items">
     <li class="gnav-item"><a href="/archive/category/活動">活動</a></li>
     <li class="gnav-item"><a href="/archive/category/学習">学習</a></li>
