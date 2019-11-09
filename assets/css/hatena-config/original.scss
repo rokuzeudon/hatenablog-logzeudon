@@ -78,7 +78,7 @@
   padding: 0 .4rem;
   background: #f2f2f2;
 }
-.share-btn {
+.share-btn, .leave-comment-title, .hatena-module-category .hatena-urllist a {
   display: flex;
   align-items: center;
   margin: .6rem .2rem;
@@ -107,9 +107,6 @@
 
 // メインビジュアル
 .page-entry {
-  #main {
-    position: relative;
-  }
   .entry-header {
     width: 100%;
     padding: 14rem 0 0;
@@ -127,12 +124,9 @@
   overflow: hidden;
   img {
     width: auto;
-    min-width: 32rem;
+    min-width: 32em;
     height: 100%;
     z-index: 20;
-    &.mv {
-      box-shadow: none;
-    }
   }
   .bg {
     position: absolute;
@@ -155,7 +149,7 @@ p.mainimage { // 一部の古い記事用
 @include min-sm {
   .page-entry {
     .entry-header {
-      padding: 21rem 0 0;
+      padding: 22rem 0 0;
     }
   }
   .mainimage {
@@ -165,13 +159,9 @@ p.mainimage { // 一部の古い記事用
       &.mv {
         margin: 0 3rem;
         width: 39rem;
-        border-radius: .8rem;
+        border-radius: .8em;
       }
     }
-    .bg { display: block; }
-  }
-  p.mainimage {
-    margin: 0 auto;
   }
 }
 
@@ -179,20 +169,18 @@ p.mainimage { // 一部の古い記事用
 .author-box {
   margin: 0 0 1rem;
   background: #f2f2f2;
-  border: 2px solid #eee;
+  border: 1px solid #eee;
+  border-radius: .4em;
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.06);
 }
 .author-left, .author-right {
   padding: 1rem;
-  width: 100%;
 }
 .author-left {
   text-align: center;
   vertical-align: middle;
   background:#fff;
-  dl {
-    margin: 0;
-    font-weight: 500;
-  }
+  border-radius: .4em .4em 0 0;
   dd {
     margin: 0;
     font-size: .8em;
@@ -210,7 +198,7 @@ p.mainimage { // 一部の古い記事用
     padding: 0;
   }
   .share-btn {
-    margin: 0 .4rem .4rem 0;
+    margin: 0 .6rem .4rem 0;
     img {
       height: 1rem;
       margin: 0 .4rem 0 0;
@@ -224,6 +212,7 @@ p.mainimage { // 一部の古い記事用
   }
   .author-left {
     width: 16rem;
+    border-radius: .4em 0 0 .4em;
   }
 }
 
