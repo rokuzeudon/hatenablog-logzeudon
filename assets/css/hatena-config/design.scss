@@ -241,6 +241,7 @@ a {
   color: #666;
   background: #ededed;
   border-radius: 1rem;
+  z-index: 20;
   &:hover {
     color: #333;
     background: #ddd;
@@ -268,11 +269,18 @@ a {
     @include min-sm {
       margin: 0 1rem 2rem;
     }
+    .entry-title a {
+      transition: .3s ease-in;
+    }
     &:hover {
       background: #fff;
       box-shadow: 0 6rem 2rem -4rem rgba(0, 0, 0, .06);
-      transform: translateY(-.5rem);
+      transform: translateY(-.3rem);
       transition: .16s ease-out;
+      .entry-title a {
+        color: #000;
+        transition: .16s ease-out;
+      }
     }
   }
   .entry-thumb {
@@ -283,7 +291,9 @@ a {
     border-radius: .6rem .6rem 0 0;
   }
   .entry-thumb-link {
+    position: absolute;
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -291,7 +301,7 @@ a {
   display: flex;
   flex-flow: column-reverse;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: 11rem 1rem 1rem;
   .entry-title {
     font-size: 1rem;
     line-height: 1.4;
