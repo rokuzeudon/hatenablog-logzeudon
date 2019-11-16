@@ -207,8 +207,12 @@ a {
 }
 
 .entry-inner, .pager, #box2-inner {
-  max-width: 38.75rem;
-  margin: auto;
+  width: calc(100vw - 2rem);
+  @include min-sm {
+    width: 100%;
+    max-width: 38.75rem;
+    margin: auto;
+  }
 }
 
 .entry-title-link {
@@ -472,7 +476,6 @@ a {
     background: linear-gradient(transparent 80%,rgba(247,222,28,.5) 0);
   }
   pre {
-    margin: 1rem 0;
     padding: 1em;
     border: 1px solid #ddd;
     white-space: pre;

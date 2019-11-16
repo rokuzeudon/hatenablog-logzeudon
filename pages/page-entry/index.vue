@@ -96,6 +96,20 @@
                         blockquote
                           p 引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。引用テキストが入ります。
                           //- 楽天
+                        pre.code.lang-html
+                          <span class="synIdentifier">&lt;</span><span class="synStatement">div</span><span class="synIdentifier"> </span><span class="synType">id</span><span class="synIdentifier">=</span><span class="synConstant">"bodymovin"</span><span class="synIdentifier">&gt;&lt;/</span><span class="synStatement">div</span><span class="synIdentifier">&gt;</span>
+                          <span class="synIdentifier">&lt;</span><span class="synStatement">script</span><span class="synIdentifier"> </span><span class="synType">src</span><span class="synIdentifier">=</span><span class="synConstant">"bodymovin.js"</span><span class="synIdentifier">&gt;&lt;/</span><span class="synStatement">script</span><span class="synIdentifier">&gt;</span>
+                          <span class="synIdentifier">&lt;</span><span class="synStatement">script</span><span class="synIdentifier">&gt;</span>
+                          <span class="synIdentifier">var</span><span class="synSpecial"> animData = </span><span class="synIdentifier">{</span>
+                          <span class="synSpecial">    wrapper: </span><span class="synStatement">document</span><span class="synSpecial">.getElementById</span>(<span class="synConstant">'bodymovin'</span>)<span class="synSpecial">,</span> <span class="synSpecial">    wrapper: </span><span class="synStatement">document</span><span class="synSpecial">.getElementById</span>(<span class="synConstant">'bodymovin'</span>)<span class="synSpecial">,</span> <span class="synSpecial">    wrapper: </span><span class="synStatement">document</span><span class="synSpecial">.getElementById</span>(<span class="synConstant">'bodymovin'</span>)<span class="synSpecial">,</span> <span class="synSpecial">    wrapper: </span><span class="synStatement">document</span><span class="synSpecial">.getElementById</span>(<span class="synConstant">'bodymovin'</span>)<span class="synSpecial">,</span>
+                          <span class="synSpecial">    animType: </span><span class="synConstant">'svg'</span><span class="synSpecial">,</span>
+                          <span class="synSpecial">    loop: </span><span class="synConstant">true</span><span class="synSpecial">,</span>
+                          <span class="synSpecial">    prerender: </span><span class="synConstant">true</span><span class="synSpecial">,</span>
+                          <span class="synSpecial">    autoplay: </span><span class="synConstant">true</span><span class="synSpecial">,</span>
+                          <span class="synSpecial">    path: </span><span class="synConstant">'data.json'</span>
+                          <span class="synIdentifier">}</span><span class="synSpecial">;</span>
+                          <span class="synIdentifier">var</span><span class="synSpecial"> anim = bodymovin.loadAnimation</span>(<span class="synSpecial">animData</span>)<span class="synSpecial">;</span>
+                          <span class="synIdentifier">&lt;/</span><span class="synStatement">script</span><span class="synIdentifier">&gt;</span>
                         .hatena-asin-detail.hatena-rakuten-detail
                           a(href="#"): img.hatena-asin-detail-image(alt="" title="" src="https://thumbnail.image.rakuten.co.jp/@0_gold/f232092-hekinan/bn/201906/h004-029.jpg?_ex=128x128")
                           .hatena-asin-detail-info
