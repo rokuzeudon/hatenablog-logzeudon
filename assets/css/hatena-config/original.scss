@@ -123,6 +123,7 @@
   width: 100%;
   height: 14em;
   overflow: hidden;
+  box-shadow: 0 0 2rem 0 rgba(0,0,0,.1);
   img {
     width: auto;
     min-width: 32em;
@@ -156,6 +157,7 @@ p.mainimage { // 一部の古い記事用
   }
   .mainimage {
     height: 22rem;
+    box-shadow: none;
     img {
       height: auto;
       &.mv {
