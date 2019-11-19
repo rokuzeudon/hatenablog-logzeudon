@@ -1,5 +1,6 @@
 // hidden
 
+#blog-description,
 .entry-description,
 .archive-entry .categories .archive-category-link,
 .archive-entry-body,
@@ -166,10 +167,6 @@ a {
   @include min-sm {
     box-shadow: none;
   }
-}
-
-#blog-description {
-  display: none;
 }
 
 #top-editarea {
