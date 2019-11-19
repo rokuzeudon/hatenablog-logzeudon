@@ -511,7 +511,7 @@ ul.table-of-contents {
   padding: 1rem;
   list-style: none;
   font-size: .9rem;
-  background: #f2f2f2;
+  border: 1px solid #ddd;
   &::before {
     content: "目次";
     display: inline-block;
@@ -543,7 +543,7 @@ ul.table-of-contents {
     line-height: 1.2;
     color: #666;
     &:hover {
-      background: #fff8f8;
+      background: #f8f8f8;
     }
     &::before {
       content: "";
