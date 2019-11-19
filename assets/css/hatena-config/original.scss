@@ -11,13 +11,13 @@
   height: 1.875rem;
   font-size: .76rem;
   font-weight: normal;
-  background: #f8f8f8;
+  background: #fff8f8;
 }
 .gnav-items {
   display: flex; //横並び
   justify-content: space-around;
   padding: 0 2%;
-  background: #f8f8f8;
+  background: #fff8f8;
 }
 .gnav-item {
   width: 30%; //４メニュー並べる
@@ -32,7 +32,7 @@
     height: 2rem;
     background: #fff;
     border-radius: 2em;
-    box-shadow: 0 0.8em 1em -0.6em rgba(0,0,0,.1)
+    box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
   }
 }
 @include min-sm {
@@ -42,32 +42,16 @@
     width: 100%;
   }
   .gnav-title {
-    display: block;
-    padding: 1rem 1rem 0;
-    height: auto;
-    text-align: center;
     background: transparent;
   }
-  .gnav-items {
-    flex-direction: column;
-    margin: .6rem 0 0;
-    padding: .8rem 1rem;
-    background: #f2f2f2;
-  }
   .gnav-item {
-    margin: .3rem 0;
-    width: 100%;
-    height: auto;
-    font-size: .9rem;
+    margin: .6rem 0 .3rem;
     a {
-      position: relative;
-      color: #666;
-      font-weight: 500;
-      border: 1px solid transparent;
-      border-radius: .2rem;
+      font-size: .8rem;
+      transition: .16s ease-out;
       &:hover {
-        color: #454545;
-        border: 1px solid #ddd;
+        box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
+        transform: translateY(-.1rem);
       }
     }
   }
@@ -102,7 +86,7 @@
   }
   &.copied {
     color: #666;
-    background: #f8f8f8;
+    background: #fff8f8;
     border: 1px solid #ddd;
   }
 }
@@ -176,7 +160,6 @@ p.mainimage { // 一部の古い記事用
   background: #f2f2f2;
   border: 1px solid #eee;
   border-radius: .4em;
-  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.06);
 }
 .author-left, .author-right {
   padding: 1rem;
@@ -261,5 +244,5 @@ dd {
 .archive-nav-link {
   position: relative;
   margin: 0;
-  box-shadow: 0 .8em 1em -.6em  rgba(0, 0, 0, 0.06);
+  box-shadow: 0 .8em 1em -.6em  rgba(180, 80, 60, .06);
 }
