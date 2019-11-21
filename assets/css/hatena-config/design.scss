@@ -4,6 +4,7 @@
 .entry-description,
 .archive-entry .categories .archive-category-link,
 .archive-entry-body,
+.entry-footer-section,
 .pager-arrow {
   display: none;
 }
@@ -54,8 +55,8 @@ a {
 
 // grid layout
 
-#blog-title      { grid-area: ContainerA }
-#top-editarea    { grid-area: ContainerB }
+#blog-title      { grid-area: ContainerA; z-index: 1}
+#top-editarea    { grid-area: ContainerB; z-index: 1 }
 #content         { grid-area: ContainerC }
 #top-box         { grid-area: ContainerD }
 #bottom-editarea { grid-area: ContainerE }
@@ -90,54 +91,40 @@ a {
 // flex layout
 
 .entry-header      {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
 }
 .entry-date        {
-  order: 3;
-  width: 100%;
+  order: 2;
   margin: 0 0 1rem;
 }
 .entry-title       {
-  order: 2;
+  order: 1;
   width: 100%;
   margin: 0 0 .4em;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.4;
-}
-.entry-categories  {
-  order: 1;
+  a {
+    color: #454545;
+  }
 }
 .customized-header {
-  order: 4;
+  order: 3;
   width: 100%;
 }
 
 .entry-footer          {
-  display: flex;
-  flex-wrap: wrap;
   border-top: 1px solid #ddd;
   margin: 2rem 0 0;
   padding: 2rem 0 0;
-}
-.entry-footer-section  {
-  order: 1;
-  margin: 1rem 0 0;
-}
-.hatena-star-container {
-  order: 2;
-  width: 100%;
+  .share-btns, .author-box, .hatena-star-container, .entry-footer-modules {
+    margin: 0 0 2rem;
+  }
 }
 .customized-footer     {
-  order: 4;
   display: flex;
   flex-direction: column-reverse;
-  width: 100%;
-}
-.comment-box           {
-  order: 3;
   width: 100%;
 }
 
@@ -151,15 +138,10 @@ a {
 }
 
 #blog-title {
-  z-index: 1;
   box-shadow: 0 0 2rem 0 rgba(180, 80, 60, .2);
   @include min-sm {
     box-shadow: none;
   }
-}
-
-#top-editarea {
-  z-index: 1;
 }
 
 #blog-title-inner { // ヘッダー画像を正方形配置
@@ -169,7 +151,7 @@ a {
   background-image: url('//data.rokuzeudon.com/blog/img/6qd.svg') !important;
   background-size: cover;
   @include min-sm {
-    margin: 2rem auto 0;
+    margin: 2rem 0 0 1rem;
     width: 10.5rem;
     height: 10.5rem !important;
   }
@@ -177,10 +159,8 @@ a {
 
 // base
 
-#main {
-  position: relative;
-}
 #main-inner {
+  position: relative;
   padding: 2rem 1rem;
 }
 @include min-sm {
@@ -199,10 +179,6 @@ a {
     max-width: 38.75rem;
     margin: auto;
   }
-}
-
-.entry-title-link {
-  color: #454545;
 }
 
 .entry-category-link {
@@ -242,37 +218,6 @@ a {
   #content {
     background: #fff8f8;
   }
-  .archive-entry {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    margin: 0 .6rem 1.8rem;
-    width: 100%;
-    max-width: 21.5rem;
-    background: #fffdfd;
-    box-shadow: 0 2rem 3rem -1rem rgba(180, 80, 60, .1);
-    border-radius: .4rem;
-    z-index: 20;
-    transition: .3s ease-in;
-    @include min-sm {
-      margin: 0 1rem 2rem;
-    }
-    .entry-title a {
-      transition: .3s ease-in;
-    }
-    &:hover {
-      background: #fff;
-      box-shadow: 0 6rem 2rem -4rem rgba(180, 80, 60, .06);
-      transform: translateY(-.3rem);
-      transition: .16s ease-out;
-      .entry-title a {
-        color: #000;
-        transition: .16s ease-out;
-      }
-    }
-  }
   .entry-thumb {
     display: block;
     width: 100%;
@@ -286,16 +231,40 @@ a {
     height: 100%;
   }
 }
+.archive-entry {
+  position: relative;
+  display: flex !important;
+  margin: 0 .6rem 1.8rem;
+  width: 100%;
+  max-width: 21.5rem;
+  background: #fffdfd;
+  box-shadow: 0 2rem 3rem -1rem rgba(180, 80, 60, .1);
+  border-radius: .4rem;
+  transition: .3s ease-in;
+  @include min-sm {
+    margin: 0 1rem 2rem;
+  }
+  .entry-title a {
+    transition: .3s ease-in;
+  }
+  &:hover {
+    background: #fff;
+    box-shadow: 0 6rem 2rem -4rem rgba(180, 80, 60, .06);
+    transform: translateY(-.3rem);
+    transition: .16s ease-out;
+    .entry-title a {
+      color: #000;
+      transition: .16s ease-out;
+    }
+  }
+}
 
 .archive-entry-header {
   display: flex;
   flex-flow: column-reverse;
-  justify-content: flex-end;
   padding: 11rem 1rem 1rem;
   .entry-title {
     font-size: 1rem;
-    line-height: 1.4;
-    letter-spacing: .04rem;
   }
 }
 
@@ -321,7 +290,7 @@ a {
 .breadcrumb-gt {
   display: inline-block;
   margin: 0 .8em;
-  color: #999;
+  color: #F36777;
   transform: scaleX(.6);
 }
 
@@ -349,31 +318,16 @@ a {
   .pager-next::before { content: "前回の記事" }
 }
 
-// entry-header-menu
-
-.entry-header-menu {
-  position: absolute;
-  top: 1rem;
-  right: 0;
-  z-index: 9999;
-  a {
-    padding: .6rem 1rem;
-    color: #fff;
-    background: #F36777;
-    box-shadow: 0 .08rem .6rem 0 rgba(67, 0, 0, 0.08);
-    border-radius: 2em;
-  }
-}
-
 // entry
 
 .entry-content {
   word-break: break-word;
-  h3, h4, h5, p, ul, ol, dl, table, blockquote, pre, .hatena-asin-detail {
+  p, ul, ol, dl, table, blockquote, pre, .hatena-asin-detail {
     margin: 1.5em 0;
   }
   h3, h4, h5 {
     position: relative;
+    margin: 2em 0 1.5em;
     font-weight: 500;
     &::before {
       content: "";
@@ -433,7 +387,7 @@ a {
   }
   blockquote {
     padding: 1.4rem;
-    background: #f2f2f2;
+    background: #f8f8f8;
     &::before, &::after {
       position: absolute;
       font-family: serif;
@@ -465,26 +419,9 @@ a {
     padding: 1em;
     border: 1px solid #ddd;
     white-space: pre;
-    &>.code {
-      margin: 0;
-      padding: 0;
-      white-space: pre;
-      border: 0;
-      background: transparent;
-      font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
-    }
-    .code {
-      margin: 0 0 2em;
-      padding: 1em;
-      border: 1px solid #ddd;
-      background-color: #fff8f8;
-      border-radius: .2em;
-      font-size: .9em;
-      font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
-    }
   }
   .hatena-asin-detail, .itunes-embed { // アフィリエイト
-    padding: 1.6em;
+    padding: 1.2em;
     border: none;
     background: #fff5ef;
     ul {
@@ -501,10 +438,6 @@ a {
   .hatena-citation {
     opacity: 1;
   }
-}
-
-.twitter-tweet {
-  width: 100% !important;
 }
 
 ul.table-of-contents {
@@ -563,7 +496,6 @@ ul.table-of-contents {
   display: inline-block !important;
   margin: 0 0 1em 0 !important;
 }
-
 .comment-box {
   margin: 0 0 2rem;
   padding: 1rem;
@@ -595,7 +527,6 @@ ul.table-of-contents {
 }
 .comment-user-name {
   margin: -.2rem 0 .2rem;
-  font-weight: 500;
 }
 .comment-content {
   word-wrap: break-word;
@@ -603,9 +534,6 @@ ul.table-of-contents {
     margin: 0 0 .4em;
     line-height: 1.4;
   }
-}
-.comment-metadata {
-  margin: 0;
 }
 
 // box2
@@ -622,11 +550,9 @@ ul.table-of-contents {
   color: #666;
 }
 
-.related-entries-date-link {
-  margin: 0 0 .4em;
-}
 .related-entries-title-link {
-  font-size: 1rem;
+  font-size: .9rem;
+  line-height: 1;
   color: #454545;
 }
 
@@ -662,19 +588,9 @@ ul.table-of-contents {
   margin: 2rem 0;
 }
 
-.hatena-module-category .hatena-urllist {
-  li {
-    display: inline-block;
-  }
-  a {
-    margin: .2rem .2rem .6rem !important;
-  }
-}
-
-.entry-footer {
-  .share-btns, .author-box, .hatena-star-container, .entry-footer-modules {
-    margin: 0 0 2rem;
-  }
+.hatena-module-category {
+  li { display: inline-block }
+  a { margin: .2rem .2rem .6rem !important }
 }
 
 // bottom-editarea フッター
