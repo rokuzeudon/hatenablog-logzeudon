@@ -588,6 +588,26 @@ ul.table-of-contents {
 .search-result {
   margin: 2rem 0;
 }
+@include min-sm {
+  .hatena-module-search-box .hatena-module-title {
+    display: none;
+  }
+  .search-form {
+    position: absolute;
+    top: 19rem;
+    left: .5rem;
+    width: 11.5rem;
+    border: 1px solid #ffcfd4;
+    z-index: 20;
+  }
+  .search-module-input {
+    padding: .6em 0 .6em .6em;
+    font-size: .8rem;
+  }
+  .search-module-button {
+    width: 2.4em;
+  }
+}
 
 .hatena-module-category {
   li { display: inline-block }
