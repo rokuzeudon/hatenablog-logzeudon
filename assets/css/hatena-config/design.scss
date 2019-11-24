@@ -523,14 +523,14 @@ ul.table-of-contents {
 
 .leave-comment-title {
   display: inline-block;
-  margin: 0 0 1em 0;
+  margin: 0;
   padding: .4rem .8rem;
 }
 .comment-box {
   margin: 0 0 2rem;
   padding: 1rem;
   background: #fff8f8;
-  border-radius: 1.4em;
+  border-radius: 2em;
   ul {
     margin: 0;
     padding: 0;
@@ -542,6 +542,9 @@ ul.table-of-contents {
       background: #fff;
       border-radius: 1em;
       box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .06);
+      &:first-child {
+        margin: 1em 0 0;
+      }
       &:last-child {
         box-shadow: none;
       }
