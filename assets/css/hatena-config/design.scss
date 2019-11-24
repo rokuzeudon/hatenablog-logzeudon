@@ -529,7 +529,8 @@ ul.table-of-contents {
 .comment-box {
   margin: 0 0 2rem;
   padding: 1rem;
-  background: #f2f2f2;
+  background: #fff8f8;
+  border-radius: 1.4em;
   ul {
     margin: 0;
     padding: 0;
@@ -539,6 +540,11 @@ ul.table-of-contents {
       margin: 0 0 .4rem;
       padding: 1em 1em 1em 5em;
       background: #fff;
+      border-radius: 1em;
+      box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .06);
+      &:last-child {
+        box-shadow: none;
+      }
       &.read-more-comments {
         margin: 0;
         padding: .6rem 0 0;
