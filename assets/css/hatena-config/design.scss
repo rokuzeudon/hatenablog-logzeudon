@@ -30,6 +30,27 @@ a {
   }
 }
 
+.share-btn, .leave-comment-title, .hatena-module-category .hatena-urllist a, .archive-nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .6rem .2rem;
+  padding: .2rem .8rem;
+  height: 2rem;
+  border-radius: 2em;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #454545;
+  background: #fff;
+  box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
+  transition: .16s ease-out;
+  &:hover {
+    color: #000;
+    box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
+    transform: translateY(-.1rem);
+  }
+}
+
 .date, .urllist-date-link, .related-entries-date-link a {
   font-family: 'Roboto', sans-serif;
   font-size: .76em;
@@ -494,8 +515,9 @@ ul.table-of-contents {
 }
 
 .leave-comment-title {
-  display: inline-block !important;
-  margin: 0 0 1em 0 !important;
+  display: inline-block;
+  margin: 0 0 1em 0;
+  padding: .4rem .8rem;
 }
 .comment-box {
   margin: 0 0 2rem;
