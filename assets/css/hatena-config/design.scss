@@ -23,7 +23,7 @@ html {
 
 body {
   color: #454545;
-  font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Sans','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', sans-serif;
+  font-family: YakuHanJPs_Narrow, -apple-system, 'BlinkMacSystemFont', 'Hiragino Sans','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', sans-serif;
   letter-spacing: .05em;
 }
 
@@ -676,11 +676,12 @@ ul.table-of-contents {
 // カテゴリページ
 
 .archive-header-category {
-  margin: 1.2rem 0;
+  margin: 1.2rem 0 2rem;
   @include min-sm {
     text-align: center;
   }
   .archive-heading {
+    margin: 0;
     font-size: 1.6rem;
     @include min-lg {
       font-size: 2rem;
