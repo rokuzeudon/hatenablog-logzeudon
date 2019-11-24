@@ -46,13 +46,14 @@ a {
   font-size: .9rem;
   font-weight: 500;
   color: #454545;
-  background: #fff;
-  box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
+  background: #fffdfd;
+  box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .06);
   @include min-sm {
     transition: .16s ease-out;
     &:hover {
       color: #000;
-      box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
+      background: #fff;
+      box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .03);
       transform: translateY(-.1rem);
     }
   }
