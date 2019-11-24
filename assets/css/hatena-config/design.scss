@@ -590,6 +590,7 @@ ul.table-of-contents {
   flex: auto 1;
   align-items: center;
   margin: 0 0 2rem;
+  border: 1px solid #ffcfd4;
   background: #fff;
   max-width: none; // .search-result-form用
 }
@@ -624,7 +625,6 @@ ul.table-of-contents {
     top: 19rem;
     left: .5rem;
     width: 11.5rem;
-    border: 1px solid #ffcfd4;
     z-index: 20;
   }
   .search-module-input {
