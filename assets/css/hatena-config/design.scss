@@ -43,11 +43,13 @@ a {
   color: #454545;
   background: #fff;
   box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
-  transition: .16s ease-out;
-  &:hover {
-    color: #000;
-    box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
-    transform: translateY(-.1rem);
+  @include min-sm {
+    transition: .16s ease-out;
+    &:hover {
+      color: #000;
+      box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
+      transform: translateY(-.1rem);
+    }
   }
 }
 
@@ -261,21 +263,21 @@ a {
   background: #fffdfd;
   box-shadow: 0 2rem 3rem -1rem rgba(180, 80, 60, .1);
   border-radius: .4rem;
-  transition: .3s ease-in;
   @include min-sm {
     margin: 0 1rem 2rem;
-  }
-  .entry-title a {
     transition: .3s ease-in;
-  }
-  &:hover {
-    background: #fff;
-    box-shadow: 0 6rem 2rem -4rem rgba(180, 80, 60, .06);
-    transform: translateY(-.3rem);
-    transition: .16s ease-out;
     .entry-title a {
-      color: #000;
+      transition: .3s ease-in;
+    }
+    &:hover {
+      background: #fff;
+      box-shadow: 0 6rem 2rem -4rem rgba(180, 80, 60, .06);
+      transform: translateY(-.3rem);
       transition: .16s ease-out;
+      .entry-title a {
+        color: #000;
+        transition: .16s ease-out;
+      }
     }
   }
 }
