@@ -9,6 +9,11 @@
   display: none;
 }
 
+.archive-nav-item,
+.hatena-module-category li {
+  display: inline-block;
+}
+
 // common
 
 html {
@@ -214,7 +219,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 3rem;
   @include min-sm {
     margin: 0 auto 1rem;
   }
@@ -635,11 +639,6 @@ ul.table-of-contents {
     max-width: 38.75rem;
     margin: -1rem auto 0;
   }
-}
-
-.hatena-module-category {
-  li { display: inline-block }
-  a { margin: .2rem .2rem .6rem !important }
 }
 
 // bottom-editarea フッター
