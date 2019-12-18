@@ -160,9 +160,6 @@ a {
 
 .header-image-only #blog-title {
   background-color: #fff8f8;
-  @include min-sm {
-    background-color: transparent;
-  }
 }
 
 #blog-title {
@@ -183,6 +180,10 @@ a {
     width: 10.5rem;
     height: 10.5rem !important;
   }
+}
+
+#top-editarea {
+  background: #fff8f8;
 }
 
 // base
@@ -242,9 +243,6 @@ a {
 }
 
 .page-archive {
-  #content {
-    background: #fff8f8;
-  }
   .entry-thumb {
     display: block;
     width: 100%;
@@ -577,7 +575,6 @@ ul.table-of-contents {
 // box2
 
 #box2 {
-  background: #fff8f8;
   padding: 3rem 1rem;
 }
 
@@ -662,7 +659,6 @@ ul.table-of-contents {
   }
   @include min-sm {
     display: flex;
-    background: transparent;
     text-align: left;
     font-size: .7rem;
     align-items: flex-end;
