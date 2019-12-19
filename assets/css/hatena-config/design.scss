@@ -153,13 +153,6 @@ a {
   background-color: #fff8f8;
 }
 
-#blog-title {
-  box-shadow: 0 0 2rem 0 rgba(180, 80, 60, .2);
-  @include min-sm {
-    box-shadow: none;
-  }
-}
-
 #blog-title-inner { // ヘッダー画像を正方形配置
   margin: 1rem 0 0 1rem;
   width: 3rem;
