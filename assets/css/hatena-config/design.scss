@@ -218,9 +218,9 @@ a {
 
 .archive-entry .categories .archive-category-link:first-child {
   display: block;
-  position: absolute;
+  position: relative;
   right: .8rem;
-  bottom: .8rem;
+  top: .8rem;
   padding: .2em .6em;
   font-size: .7rem;
   color: #666;
