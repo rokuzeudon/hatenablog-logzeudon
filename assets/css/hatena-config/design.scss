@@ -450,7 +450,7 @@ ul.table-of-contents {
   border-top: 1px solid #ddd;
   margin: 2rem 0 0;
   padding: 2rem 0 0;
-  .share-btns, .author-box, .hatena-star-container, .entry-footer-modules {
+  .share-btns, .hatena-star-container, .entry-footer-modules {
     margin: 0 0 2rem;
   }
 }
@@ -466,7 +466,8 @@ ul.table-of-contents {
   padding: 0 2rem 3rem;
 }
 
-.hatena-module-title {
+.hatena-module-title,
+.page-about dt {
   margin: 0 0 .4rem;
   font-size: .9rem;
   font-weight: 500;
