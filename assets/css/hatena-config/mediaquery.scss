@@ -1,5 +1,16 @@
 @include min-sm {
 
+  // ホバー時のインタラクション
+  .gnav-item a,
+  .page-archive .entry-thumb-link,
+  .share-btn {
+    transition: .3s ease-out;
+    &:hover {
+      transform: translateY(-.16em);
+      transition: .16s ease-out;
+    }
+  }
+
   // 画面幅が短いときに要素がはみ出ないように
   .entry-inner,
   .pager,
@@ -100,10 +111,8 @@
     margin: .3rem 0;
     a {
       font-size: .8rem;
-      transition: .16s ease-out;
       &:hover {
         box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
-        transform: translateY(-.1rem);
       }
     }
   }

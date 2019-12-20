@@ -133,14 +133,12 @@ p.mainimage { // 一部の古い記事用
     background: #fff;
     border-radius: 2em;
     box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
-    transition: .16s ease-out;
     img {
       height: 1rem;
       margin: 0 .4rem 0 0;
     }
     &:hover {
       box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
-      transform: translateY(-.1rem);
     }
   }
 }
