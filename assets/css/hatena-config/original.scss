@@ -32,34 +32,11 @@
     box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
   }
 }
-@include min-sm {
-  .gnav {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .gnav-title {
-    background: transparent;
-  }
-  .gnav-item {
-    margin: .6rem 0 .3rem;
-    a {
-      font-size: .8rem;
-      transition: .16s ease-out;
-      &:hover {
-        box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
-        transform: translateY(-.1rem);
-      }
-    }
-  }
-}
 
 .share-btns {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-
   img {
     width: auto;
     height: 1.4rem;
@@ -109,25 +86,6 @@ p.mainimage { // 一部の古い記事用
   background-size: cover !important;
   margin: 0 auto;
 }
-@include min-sm {
-  .page-entry {
-    .entry-header {
-      padding: 22rem 0 0;
-    }
-  }
-  .mainimage {
-    height: 22rem;
-    box-shadow: none;
-    img {
-      height: auto;
-      &.mv {
-        margin: 0 3rem;
-        width: 39rem;
-        border-radius: .8em;
-      }
-    }
-  }
-}
 
 // この記事を書いた人
 .author-box {
@@ -170,16 +128,6 @@ p.mainimage { // 一部の古い記事用
       height: 1rem;
       margin: 0 .4rem 0 0;
     }
-  }
-}
-@include min-sm {
-  .author-box {
-    display: flex;
-    align-items: center;
-  }
-  .author-left {
-    width: 16rem;
-    border-radius: .4em 0 0 .4em;
   }
 }
 
