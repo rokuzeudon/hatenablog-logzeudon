@@ -1,17 +1,15 @@
 .gnav  {
   position: absolute; //ロゴの横に移動
   top: .8rem;
-  left: 4.2rem;
-  width: calc(100% - 4.8rem);
+  left: 5.4rem;
+  width: calc(100% - 5.8rem);
 }
 .gnav-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1.875rem;
+  padding: .4rem;
   font-size: .76rem;
-  font-weight: normal;
-  background: #fff8f8;
 }
 .gnav-items {
   display: flex; //横並び
@@ -37,6 +35,7 @@
 @include min-sm {
   .gnav {
     position: relative;
+    top: 0;
     left: 0;
     width: 100%;
   }

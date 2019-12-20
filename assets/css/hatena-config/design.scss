@@ -91,7 +91,7 @@ a {
 @include min-sm { // PC２カラム
   #container-inner {
     grid-template: "ContainerA ContainerD" 2rem
-                   "ContainerA ContainerC" 10.5rem
+                   "ContainerA ContainerC" 9rem
                    "ContainerB ContainerC" auto
                    "ContainerE ContainerC" auto
                    / 12.5rem auto;
@@ -100,7 +100,7 @@ a {
   .page-index #container-inner,
   .page-about #container-inner,
   .page-archive-category-name #container-inner {
-    grid-template: "ContainerA ContainerC" 12.5rem
+    grid-template: "ContainerA ContainerC" 11rem
                    "ContainerB ContainerC" auto
                    "ContainerE ContainerC" auto
                    / 12.5rem auto;
@@ -154,15 +154,15 @@ a {
 }
 
 #blog-title-inner { // ヘッダー画像を正方形配置
-  margin: 1rem 0 0 1rem;
-  width: 3rem;
+  margin: 1rem;
+  width: 4rem;
   height: 4rem !important;
-  background-image: url('//data.rokuzeudon.com/blog/img/6qd.svg') !important;
+  background-image: url('//cdn-ak.f.st-hatena.com/images/fotolife/r/rokuzeudon/20181113/20181113094535.png') !important;
   background-size: cover;
   @include min-sm {
-    margin: 2rem 0 0 1rem;
-    width: 10.5rem;
-    height: 10.5rem !important;
+    margin: 2rem auto;
+    width: 8.2rem;
+    height: 8.2rem !important;
   }
 }
 
@@ -596,7 +596,7 @@ ul.table-of-contents {
   }
   .search-form {
     position: absolute;
-    top: 19rem;
+    top: 16rem;
     left: .5rem;
     width: 11.5rem;
     z-index: 20;
