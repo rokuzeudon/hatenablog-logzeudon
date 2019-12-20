@@ -30,13 +30,13 @@
       <img src="//cdn-ak.f.st-hatena.com/images/fotolife/r/rokuzeudon/20181113/20181113094535.png" alt="rokuzeudon" class="">
     </div>
     <div class="author-name">
-      <a href="../about#aboutme">ろくぜうどん</a>
+      <p>ろくぜうどん</p>
     </div>
     <div class="author-id">id:rokuzeudon</div>
   </div>
   <div class="author-right">
     <div class="author-message">
-      <p>名古屋で働いている、UI/UXについて考えるのが好きなWebデザイナーです。現在はインハウスで自社開発ツールのデザインに携わっています。</p>
+      <p>モノ・コトをより良くするWebデザイナーです。サービス開発におけるUIデザイン・LP制作・HTML/CSS実装・プロジェクトマネジメントなど幅広く立ち回っています。</p>
       <div class="share-btns">
         <a class="share-btn" href="https://twitter.com/rokuzeudon"><img src="//data.rokuzeudon.com/blog/img/icn-twitter.svg" alt="Twitter"> フォロー</a>
         <a class="share-btn" href="http://blog.hatena.ne.jp/rokuzeudon/blog.rokuzeudon.com/subscribe" onclick="window.open('http://blog.hatena.ne.jp/rokuzeudon/blog.rokuzeudon.com/subscribe', '', 'width=500,height=400'); return false;"><img src="//data.rokuzeudon.com/blog/img/icn-hatenablog.svg" alt="はてなブログ"> 読者登録</a>
