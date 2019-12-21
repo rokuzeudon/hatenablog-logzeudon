@@ -1,23 +1,20 @@
 .gnav  {
   position: absolute; //ロゴの横に移動
   top: .8rem;
-  left: 4.2rem;
-  width: calc(100% - 4.8rem);
+  left: 5.4rem;
+  width: calc(100% - 5.8rem);
 }
 .gnav-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1.875rem;
+  padding: .4rem;
   font-size: .76rem;
-  font-weight: normal;
-  background: #fff8f8;
 }
 .gnav-items {
   display: flex; //横並び
   justify-content: space-around;
   padding: 0 2%;
-  background: #fff8f8;
 }
 .gnav-item {
   width: 30%; //４メニュー並べる
@@ -35,38 +32,11 @@
     box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
   }
 }
-@include min-sm {
-  .gnav {
-    position: relative;
-    left: 0;
-    width: 100%;
-  }
-  .gnav-title {
-    background: transparent;
-  }
-  .gnav-item {
-    margin: .6rem 0 .3rem;
-    a {
-      font-size: .8rem;
-      transition: .16s ease-out;
-      &:hover {
-        box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
-        transform: translateY(-.1rem);
-      }
-    }
-  }
-}
 
 .share-btns {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0 .4rem;
-  background: #fff0f0;
-  border-radius: 2em;
-  a {
-    background: #fff;
-  }
   img {
     width: auto;
     height: 1.4rem;
@@ -116,77 +86,60 @@ p.mainimage { // 一部の古い記事用
   background-size: cover !important;
   margin: 0 auto;
 }
-@include min-sm {
-  .page-entry {
-    .entry-header {
-      padding: 22rem 0 0;
-    }
-  }
-  .mainimage {
-    height: 22rem;
-    box-shadow: none;
-    img {
-      height: auto;
-      &.mv {
-        margin: 0 3rem;
-        width: 39rem;
-        border-radius: .8em;
-      }
-    }
-  }
-}
 
 // この記事を書いた人
 .author-box {
-  margin: 0 0 1rem;
-  background: #fff0f0;
-  border: 1px solid #ffdada;
-  border-radius: .4em;
-}
-.author-left, .author-right {
-  padding: 1rem;
+  display: flex;
+  margin: 1rem 0 2rem;
+  font-size: .8rem;
 }
 .author-left {
   text-align: center;
-  vertical-align: middle;
-  background:#fff;
-  border-radius: .4em .4em 0 0;
-  dl {
-    margin: .4em 0 0;
-  }
-  dd {
-    margin: 0;
-    font-size: .8em;
-    font-weight: normal;
-    color: #999;
-  }
 }
-.author-right {
-  p {
-    margin: 0 0 1rem;
-    font-size: .9rem;
-    line-height: 1.6;
+.author-img img {
+  width: 100%;
+  max-width: 6rem;
+}
+.author-name {
+  letter-spacing: 0;
+}
+.author-id {
+  margin: 0;
+  font-weight: normal;
+  color: #999;
+}
+.author-message {
+  position: relative;
+  margin: 0 0 0 1rem;
+  padding: 1rem;
+  line-height: 1.6;
+  background: #ffebeb;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3.8em;
+    left: -1.4em;
+    margin-top: -.7em;
+    border: .7em solid transparent;
+    border-right: .7em solid #ffebeb;
   }
   .share-btns {
-    margin: 0 0 -.4rem;
-    padding: 0;
+    margin: 0;
   }
   .share-btn {
-    margin: 0 .6rem .6rem 0;
+    margin: .4rem .6rem 0 0;
+    padding: .2rem .6rem;
+    color: #454545;
+    background: #fff;
+    border-radius: 2em;
+    box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
     img {
       height: 1rem;
       margin: 0 .4rem 0 0;
     }
-  }
-}
-@include min-sm {
-  .author-box {
-    display: flex;
-    align-items: center;
-  }
-  .author-left {
-    width: 16rem;
-    border-radius: .4em 0 0 .4em;
+    &:hover {
+      box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
+    }
   }
 }
 
@@ -194,27 +147,10 @@ p.mainimage { // 一部の古い記事用
 .about-box img {
   box-shadow: none;
 }
-.feedly::before {
-  content: "\f04e";
-  font: 1.2em/1 blogicon;
-  display: inline-block;
-  vertical-align: text-bottom;
-  margin: 0 .4em 0 0;
-  color: #2bb24c;
+.page-about dl {
+  padding: 1.4rem 1.4rem .5rem;
+  background: #fff8f8;
 }
-#privacy.about-box {
-  padding: .02em 1.6rem;
-  background: #f2f2f2;
-  a {
-    display: inline;
-  }
-}
-dt {
-  margin: 0 0 .2em;
-  font-size: .9rem;
-  font-weight: 500;
-  color: #666;
-}
-dd {
-  margin: .5rem 0 1rem;
+.page-about dd {
+  margin: -.2rem 0 1rem;
 }

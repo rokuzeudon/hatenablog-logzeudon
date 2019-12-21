@@ -1,0 +1,137 @@
+@include min-sm {
+
+  // ホバー時のインタラクション
+  .gnav-item a,
+  .page-archive .entry-thumb-link,
+  .share-btn {
+    transition: .3s ease-out;
+    &:hover {
+      transform: translateY(-.16em);
+      transition: .16s ease-out;
+    }
+  }
+
+  // 画面幅が短いときに要素がはみ出ないように
+  .entry-inner,
+  .pager,
+  #box2-inner,
+  .search-result {
+    width: 100%;
+  }
+
+  // PC２カラム
+  #container-inner {
+    grid-template: "ContainerA ContainerD" 2rem
+                   "ContainerA ContainerC" 9rem
+                   "ContainerB ContainerC" auto
+                   "ContainerE ContainerC" auto
+                   / 12.5rem auto;
+  }
+  // 右コンテンツをスクロールさせる
+  #content {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    height: calc(100vh - 2rem);
+  }
+  // パンくずがないページの調整
+  .page-index #container-inner,
+  .page-about #container-inner {
+    grid-template: "ContainerA ContainerC" 11rem
+                   "ContainerB ContainerC" auto
+                   "ContainerE ContainerC" auto
+                   / 12.5rem auto;
+  }
+  .page-index #content,
+  .page-about #content {
+    height: 100vh;
+  }
+
+  // ヘッダー画像のサイズ調整
+  #blog-title-inner {
+    margin: 2rem auto;
+    width: 8.2rem;
+    height: 8.2rem !important;
+  }
+
+  // パンくずにドロップシャドウ追加
+  #top-box {
+    border-bottom: 2px solid #fff8f8;
+  }
+
+  // 検索欄の移動・調整
+  .hatena-module-search-box .hatena-module-title {
+    display: none;
+  }
+  .search-form {
+    position: absolute;
+    top: 16rem;
+    left: .5rem;
+    width: 11.5rem;
+    z-index: 20;
+  }
+  .search-module-input {
+    padding: .6em 0 .6em .6em;
+    font-size: .8rem;
+    min-width: 0; // Firefoxのバグ対策
+  }
+  .search-module-button {
+    width: 2.4em;
+  }
+
+  // フッターのレイアウト調整
+  #bottom-editarea {
+    display: flex;
+    text-align: left;
+    font-size: .7rem;
+    align-items: flex-end;
+    a {
+      display: inline-block;
+    }
+  }
+
+  // カテゴリページ
+  .archive-header-category {
+    text-align: center;
+  }
+  .archive-heading {
+    font-size: 2rem;
+  }
+  .archive-entry {
+    margin: 1rem 1.6rem;
+  }
+
+  // グローバルナビゲーションを画面左に移動
+  .gnav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .gnav-item {
+    margin: .3rem 0;
+    a {
+      font-size: .8rem;
+      &:hover {
+        box-shadow: 0 .9em .6em 0 rgba(180, 80, 60, .06);
+      }
+    }
+  }
+
+  // 記事詳細 メインイメージ
+  .page-entry .entry-header {
+    padding: 22rem 0 0;
+  }
+  .mainimage {
+    height: 22rem;
+    box-shadow: none;
+    img {
+      height: auto;
+      &.mv {
+        margin: 0 3rem;
+        width: 39rem;
+        border-radius: .8em;
+      }
+    }
+  }
+
+}
