@@ -52,6 +52,9 @@ a {
   font-size: .9rem;
   font-weight: 500;
 }
+.archive-nav-item:last-child .archive-nav-link {
+  padding: .2rem 0;
+}
 
 .date a,
 .urllist-date-link a,
