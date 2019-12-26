@@ -10,6 +10,15 @@
       transition: .16s ease-out;
     }
   }
+  .archive-entry {
+    .entry-title-link {
+      transition: .3s ease-out;
+    }
+    &:hover .entry-title-link {
+      color: #f36777;
+      transition: .16s ease-out;
+    }
+  }
 
   // 画面幅が短いときに要素がはみ出ないように
   .entry-inner,
