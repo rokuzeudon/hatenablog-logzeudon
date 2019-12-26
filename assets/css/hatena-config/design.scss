@@ -592,7 +592,7 @@ ul.table-of-contents {
   }
   .entry-title {
     font-size: 1.8rem;
-}
+  }
 }
 .mainimage {
   display: flex;
@@ -690,13 +690,15 @@ p.mainimage { // 一部の古い記事用
 
 // page-about
 
-.about-box img {
-  box-shadow: none;
-}
-.page-about dl {
-  padding: 1.4rem 1.4rem .5rem;
-  background: #fff8f8;
-}
-.page-about dd {
-  margin: -.2rem 0 1rem;
+.page-about {
+  img {
+    box-shadow: none;
+  }
+  dl {
+    padding: 1.4rem 1.4rem .5rem;
+    background: #fff8f8;
+  }
+  dd {
+    margin: -.2rem 0 1rem;
+  }
 }
