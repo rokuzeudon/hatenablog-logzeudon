@@ -90,6 +90,9 @@
   }
 
   // カテゴリページ
+  .page-archive #main-inner {
+    padding: 2rem 1rem;
+  }
   .archive-header-category {
     text-align: center;
   }
@@ -97,7 +100,7 @@
     font-size: 2rem;
   }
   .archive-entry {
-    margin: 1rem 1.6rem;
+    margin: 1rem 1.3rem;
   }
 
   // グローバルナビゲーションを画面左に移動
