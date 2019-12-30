@@ -6,7 +6,6 @@ $min-lg: "min-width: 1200px";
 $min-xl: "min-width: 1681px";
 
 // colors
-$color-text-black: #000;
 $color-text-base: #454545;
 $color-text-light: #999;
 $color-text-white: #FFF;
@@ -24,3 +23,20 @@ $color-bg-key-accent: #F36777;
 
 $color-border-mono: #DDD;
 $color-border-color: #FFCFD4;
+
+// darkmode
+$darktext-base: #EEE;
+$darktext-light: #AAA;
+
+$darktext-link: #F36777;
+$darktext-hover: #B30E21;
+
+$darkbg-light: #333;
+$darkbg-white: #2C2C2C;
+
+$darkbg-key-base: #1B2021;
+$darkbg-key-dark: #000;
+$darkbg-key-accent: #F36777;
+
+$darkborder-mono: #555;
+$darkborder-color: #555;
