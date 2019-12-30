@@ -342,7 +342,6 @@ a {
   }
   pre {
     padding: 1em;
-    border: 1px solid $color-border-mono;
     white-space: pre;
   }
   .hatena-asin-detail, .itunes-embed { // アフィリエイト
@@ -450,7 +449,6 @@ ul.table-of-contents {
 }
 
 .entry-footer          {
-  border-top: 1px solid $color-border-mono;
   margin: 2rem 0 0;
   padding: 2rem 0 0;
   .share-btns, .hatena-star-container, .entry-footer-modules {

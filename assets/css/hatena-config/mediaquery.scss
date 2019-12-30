@@ -207,12 +207,12 @@
   .entry-content pre {
     border: 1px solid $darkborder-mono;
   }
-  .entry-footer {
-    border-top: 1px solid $darkborder-mono;
-  }
   .search-form,
   .search-result-form {
-    border: 1px solid $darkborder-color;
+    border: 1px solid $darkborder-mono;
+  }
+  .search-module-button,
+  .search-result-form .search-result-button {
     background: transparent url("//data.rokuzeudon.com/blog/img/icn-search-white.svg") no-repeat center center/40%;
   }
   @include min-sm {
