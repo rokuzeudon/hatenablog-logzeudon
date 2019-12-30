@@ -6,16 +6,16 @@ html {
 }
 
 body {
-  color: #454545;
+  color: $color-text-base;
   font-family: YakuHanJPs_Narrow, -apple-system, 'BlinkMacSystemFont', 'Hiragino Sans','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', sans-serif;
   letter-spacing: .05em;
 }
 
 a {
-  color: #F36777;
+  color: $color-text-link;
   text-decoration: none;
   &:hover {
-    color: #b30e21;
+    color: $color-text-hover;
   }
 }
 
@@ -59,7 +59,7 @@ a {
 .date a,
 .urllist-date-link a,
 .related-entries-date-link a {
-  color: #999;
+  color: $color-text-light;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: .76em;
@@ -95,7 +95,7 @@ a {
 
 .header-image-only #blog-title,
 #top-editarea {
-  background: #fff8f8;
+  background: $color-bg-key-base;
 }
 
 // base
@@ -121,9 +121,9 @@ a {
   font-weight: 500;
   line-height: 1.4;
   a {
-    color: #454545;
+    color: $color-text-base;
     &:hover {
-      color: #000;
+      color: $color-text-base;
     }
   }
 }
@@ -151,8 +151,8 @@ a {
   top: .8rem;
   padding: .2em .6em;
   font-size: .7rem;
-  color: #fff;
-  background: #000;
+  color: $color-text-white;
+  background: $color-bg-black;
   border-radius: 1rem;
   z-index: 20;
   opacity: .6;
@@ -231,7 +231,7 @@ a {
       margin: 0 0 .5em;
       font-size: .9rem;
       font-weight: 500;
-      color: #666;
+      color: $color-text-light;
     }
   }
   .pager-prev{
@@ -265,7 +265,7 @@ a {
       content: "";
       position: absolute;
       display: block;
-      background: #ddd;
+      background: $color-bg-key-accent;
     }
   }
   h3 {
@@ -275,7 +275,7 @@ a {
       bottom: 0;
       left: 0;
       width: 100%;
-      height: .2rem;
+      height: 3px;
     }
   }
   h4 {
@@ -284,7 +284,7 @@ a {
     &::before {
       top: 0;
       left: 0;
-      width: .2rem;
+      width: 3px;
       height: 100%;
     }
   }
@@ -294,7 +294,7 @@ a {
     &::before {
       top: 0;
       left: 0;
-      width: .1rem;
+      width: 2px;
       height: 100%;
     }
   }
@@ -319,13 +319,13 @@ a {
   }
   blockquote {
     padding: 1.4rem;
-    background: #f8f8f8;
+    background: $color-bg-light;
     &::before, &::after {
       position: absolute;
       font-family: serif;
       font-size: 3em;
       line-height: 1;
-      color: #ccc;
+      color: $color-text-light;
     }
     &::before {
       content: "“";
@@ -342,13 +342,12 @@ a {
   }
   pre {
     padding: 1em;
-    border: 1px solid #ddd;
     white-space: pre;
   }
   .hatena-asin-detail, .itunes-embed { // アフィリエイト
     padding: 1.2em;
     border: none;
-    background: #fff8f8;
+    background: $color-bg-key-base;
     ul {
       margin: 1rem 0 0;
       padding: 0;
@@ -367,13 +366,13 @@ ul.table-of-contents {
   padding: 1rem;
   list-style: none;
   font-size: .9rem;
-  background: #fff8f8;
+  background: $color-bg-key-base;
   &::before {
     content: "目次";
     display: inline-block;
     margin: 0 0 .2rem;
     font-weight: 500;
-    color: #F36777;
+    color: $color-text-link;
   }
   li {
     margin: 0;
@@ -389,9 +388,9 @@ ul.table-of-contents {
     display: block;
     padding: .3rem 0 .3rem 1rem;
     line-height: 1.2;
-    color: #666;
+    color: $color-text-base;
     &:hover {
-      background: #ffebeb;
+      background: $color-bg-key-dark;
     }
     &::before {
       content: "";
@@ -399,9 +398,9 @@ ul.table-of-contents {
       position: absolute;
       top: .7rem;
       left: .2rem;
-      width: .3rem;
-      height: .3rem;
-      background: #F36777;
+      width: 6px;
+      height: 6px;
+      background: $color-bg-key-accent;
     }
   }
 }
@@ -412,7 +411,7 @@ ul.table-of-contents {
 .comment-box {
   margin: 0 0 2rem;
   padding: 1rem;
-  background: #fff8f8;
+  background: $color-bg-key-base;
   line-height: 1.4;
   word-wrap: break-word;
   ul {
@@ -423,7 +422,7 @@ ul.table-of-contents {
     li {
       margin: 0 0 .4rem;
       padding: 1em 1em 1em 5em;
-      background: #fff;
+      background: $color-bg-white;
       box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .06);
       &:first-child {
         margin: 1em 0 .4rem;
@@ -450,7 +449,6 @@ ul.table-of-contents {
 }
 
 .entry-footer          {
-  border-top: 1px solid #ddd;
   margin: 2rem 0 0;
   padding: 2rem 0 0;
   .share-btns, .hatena-star-container, .entry-footer-modules {
@@ -474,7 +472,7 @@ ul.table-of-contents {
   margin: 0 0 .4rem;
   font-size: .9rem;
   font-weight: 500;
-  color: #666;
+  color: $color-text-light;
 }
 
 .related-entries-date-link {
@@ -484,7 +482,7 @@ ul.table-of-contents {
 .related-entries-title-link {
   font-size: .9rem;
   line-height: 1;
-  color: #454545;
+  color: $color-text-base;
 }
 
 .search-form,
@@ -493,8 +491,8 @@ ul.table-of-contents {
   flex: auto 1;
   align-items: center;
   margin: 0 0 2rem;
-  border: 1px solid #ffcfd4;
-  background: #fff;
+  border: 1px solid $color-border-color;
+  background: $color-bg-white;
   max-width: none; // .search-result-form用
 }
 .search-module-input,
@@ -523,7 +521,7 @@ ul.table-of-contents {
 
 #bottom-editarea {
   padding: 1rem;
-  background: #fff8f8;
+  background: $color-bg-key-base;
   text-align: center;
   font-size: .8rem;
   p {
@@ -570,7 +568,7 @@ ul.table-of-contents {
     justify-content: center;
     align-items: center;
     height: 2rem;
-    background: #fff;
+    background: $color-bg-white;
     border-radius: 2em;
     box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
   }
@@ -654,14 +652,14 @@ p.mainimage { // 一部の古い記事用
 .author-id {
   margin: 0;
   font-weight: normal;
-  color: #999;
+  color: $color-text-light;
 }
 .author-message {
   position: relative;
   margin: 0 0 0 1rem;
   padding: 1rem;
   line-height: 1.6;
-  background: #ffebeb;
+  background: $color-bg-key-dark;
   &::before {
     content: "";
     position: absolute;
@@ -669,7 +667,7 @@ p.mainimage { // 一部の古い記事用
     left: -1.4em;
     margin-top: -.7em;
     border: .7em solid transparent;
-    border-right: .7em solid #ffebeb;
+    border-right: .7em solid $color-bg-key-dark;
   }
   .share-btns {
     margin: 0;
@@ -677,8 +675,8 @@ p.mainimage { // 一部の古い記事用
   .share-btn {
     margin: .4rem .6rem 0 0;
     padding: .2rem .6rem;
-    color: #454545;
-    background: #fff;
+    color: $color-text-base;
+    background: $color-bg-white;
     border-radius: 2em;
     box-shadow: 0 .5em .3em -.2em rgba(180, 80, 60, .1);
     img {
@@ -699,7 +697,7 @@ p.mainimage { // 一部の古い記事用
   }
   dl {
     padding: 1.4rem 1.4rem .5rem;
-    background: #fff8f8;
+    background: $color-bg-key-base;
   }
   dd {
     margin: -.2rem 0 1rem;
