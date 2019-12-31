@@ -12,10 +12,10 @@ body {
 }
 
 a {
-  color: $color-text-link;
+  color: $color-key-accent1;
   text-decoration: none;
   &:hover {
-    color: $color-text-hover;
+    color: $color-key-accent2;
   }
 }
 
@@ -59,7 +59,7 @@ a {
 .date a,
 .urllist-date-link a,
 .related-entries-date-link a {
-  color: $color-text-light;
+  color: $color-text-gray;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: .76em;
@@ -95,7 +95,7 @@ a {
 
 .header-image-only #blog-title,
 #top-editarea {
-  background: $color-bg-key-base;
+  background: $color-bg-key1;
 }
 
 // base
@@ -231,7 +231,7 @@ a {
       margin: 0 0 .5em;
       font-size: .9rem;
       font-weight: 500;
-      color: $color-text-light;
+      color: $color-text-gray;
     }
   }
   .pager-prev{
@@ -265,7 +265,7 @@ a {
       content: "";
       position: absolute;
       display: block;
-      background: $color-bg-key-accent;
+      background: $color-key-accent1;
     }
   }
   h3 {
@@ -319,13 +319,13 @@ a {
   }
   blockquote {
     padding: 1.4rem;
-    background: $color-bg-light;
+    background: $color-bg-gray;
     &::before, &::after {
       position: absolute;
       font-family: serif;
       font-size: 3em;
       line-height: 1;
-      color: $color-text-light;
+      color: $color-text-gray;
     }
     &::before {
       content: "“";
@@ -347,7 +347,7 @@ a {
   .hatena-asin-detail, .itunes-embed { // アフィリエイト
     padding: 1.2em;
     border: none;
-    background: $color-bg-key-base;
+    background: $color-bg-key1;
     ul {
       margin: 1rem 0 0;
       padding: 0;
@@ -366,13 +366,13 @@ ul.table-of-contents {
   padding: 1rem;
   list-style: none;
   font-size: .9rem;
-  background: $color-bg-key-base;
+  background: $color-bg-key1;
   &::before {
     content: "目次";
     display: inline-block;
     margin: 0 0 .2rem;
     font-weight: 500;
-    color: $color-text-link;
+    color: $color-key-accent1;
   }
   li {
     margin: 0;
@@ -390,7 +390,7 @@ ul.table-of-contents {
     line-height: 1.2;
     color: $color-text-base;
     &:hover {
-      background: $color-bg-key-dark;
+      background: $color-bg-key2;
     }
     &::before {
       content: "";
@@ -400,7 +400,7 @@ ul.table-of-contents {
       left: .2rem;
       width: 6px;
       height: 6px;
-      background: $color-bg-key-accent;
+      background: $color-key-accent1;
     }
   }
 }
@@ -411,7 +411,7 @@ ul.table-of-contents {
 .comment-box {
   margin: 0 0 2rem;
   padding: 1rem;
-  background: $color-bg-key-base;
+  background: $color-bg-key1;
   line-height: 1.4;
   word-wrap: break-word;
   ul {
@@ -472,7 +472,7 @@ ul.table-of-contents {
   margin: 0 0 .4rem;
   font-size: .9rem;
   font-weight: 500;
-  color: $color-text-light;
+  color: $color-text-gray;
 }
 
 .related-entries-date-link {
@@ -491,7 +491,7 @@ ul.table-of-contents {
   flex: auto 1;
   align-items: center;
   margin: 0 0 2rem;
-  border: 1px solid $color-border-color;
+  border: 1px solid $color-border;
   background: $color-bg-white;
   max-width: none; // .search-result-form用
 }
@@ -521,7 +521,7 @@ ul.table-of-contents {
 
 #bottom-editarea {
   padding: 1rem;
-  background: $color-bg-key-base;
+  background: $color-bg-key1;
   text-align: center;
   font-size: .8rem;
   p {
@@ -652,14 +652,14 @@ p.mainimage { // 一部の古い記事用
 .author-id {
   margin: 0;
   font-weight: normal;
-  color: $color-text-light;
+  color: $color-text-gray;
 }
 .author-message {
   position: relative;
   margin: 0 0 0 1rem;
   padding: 1rem;
   line-height: 1.6;
-  background: $color-bg-key-dark;
+  background: $color-bg-key2;
   &::before {
     content: "";
     position: absolute;
@@ -667,7 +667,7 @@ p.mainimage { // 一部の古い記事用
     left: -1.4em;
     margin-top: -.7em;
     border: .7em solid transparent;
-    border-right: .7em solid $color-bg-key-dark;
+    border-right: .7em solid $color-bg-key2;
   }
   .share-btns {
     margin: 0;
@@ -697,7 +697,7 @@ p.mainimage { // 一部の古い記事用
   }
   dl {
     padding: 1.4rem 1.4rem .5rem;
-    background: $color-bg-key-base;
+    background: $color-bg-key1;
   }
   dd {
     margin: -.2rem 0 1rem;

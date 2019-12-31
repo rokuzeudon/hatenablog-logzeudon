@@ -9,25 +9,24 @@ $min-xl: "min-width: 1681px";
 // colors
 
 $color-text-base: #454545;
-$color-text-light: #999;
+$color-text-gray: #999;
 $color-text-white: #FFF;
-$color-text-link: #F36777;
-$color-text-hover: #B30E21;
 $color-bg-black: #000;
-$color-bg-light: #f2f2f2;
+$color-bg-gray: #F2F2F2;
 $color-bg-white: #FFF;
-$color-bg-key-base: #FFF8F8;
-$color-bg-key-dark: #FFEBEB;
-$color-bg-key-accent: #F36777;
+$color-bg-key1: #FFF8F8;
+$color-bg-key2: #FFEBEB;
+$color-border: #FFCFD4;
 
-$color-border-color: #FFCFD4;
+$color-key-accent1: #F36777;
+$color-key-accent2: #B30E21;
 
 // darkmode
 
-$darktext-base: #EEE;
-$darktext-light: #AAA;
-$darkbg-light: #333;
-$darkbg-white: #2C2C2C;
-$darkbg-key-base: #1B2021;
-$darkbg-key-dark: #000;
-$darkborder-mono: #555;
+$color_dark-text-base: #EEE;
+$color_dark-text-gray: #AAA;
+$color_dark-bg-gray: #333;
+$color_dark-bg-white: #2C2C2C;
+$color_dark-bg-key1: #1B2021;
+$color_dark-bg-key2: #000;
+$color_dark-border: #555;

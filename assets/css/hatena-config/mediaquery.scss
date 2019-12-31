@@ -64,7 +64,7 @@
 
   // パンくずにドロップシャドウ追加
   #top-box {
-    border-bottom: 2px solid $color-bg-key-base;
+    border-bottom: 2px solid $color-bg-key1;
   }
 
   // 検索欄の移動・調整
@@ -161,7 +161,7 @@
   ul.table-of-contents a,
   .related-entries-title-link,
   .share-btn {
-    color: $darktext-base;
+    color: $color_dark-text-base;
   }
   .date a,
   .urllist-date-link a,
@@ -173,10 +173,10 @@
   .hatena-module-title,
   .page-about dt,
   .author-id {
-    color: $darktext-light;
+    color: $color_dark-text-gray;
   }
   .entry-content blockquote {
-    background: $darkbg-light;
+    background: $color_dark-bg-gray;
   }
   body,
   .comment-box ul li,
@@ -184,7 +184,7 @@
   .search-result-form,
   .gnav-item a,
   .share-btn {
-    background: $darkbg-white;
+    background: $color_dark-bg-white;
   }
   .header-image-only #blog-title,
   #top-editarea,
@@ -195,21 +195,21 @@
   .comment-box,
   #bottom-editarea,
   .page-about dl {
-    background: $darkbg-key-base;
+    background: $color_dark-bg-key1;
   }
   .author-message,
   ul.table-of-contents a:hover {
-    background: $darkbg-key-dark;
+    background: $color_dark-bg-key2;
   }
   .author-message::before {
-    border-right: .7em solid $darkbg-key-dark;
+    border-right: .7em solid $color_dark-bg-key2;
   }
   .entry-content pre {
-    border: 1px solid $darkborder-mono;
+    border: 1px solid $color_dark-border;
   }
   .search-form,
   .search-result-form {
-    border: 1px solid $darkborder-mono;
+    border: 1px solid $color_dark-border;
   }
   .search-module-button,
   .search-result-form .search-result-button {
@@ -217,7 +217,7 @@
   }
   @include min-sm {
     #top-box {
-      border-bottom: 2px solid $darkbg-key-dark;
+      border-bottom: 2px solid $color_dark-bg-key2;
     }
   }
 
