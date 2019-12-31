@@ -1,22 +1,21 @@
 // media queries
+
 // $min-xs: "max-width: 480px";
 $min-sm: "min-width: 768px";
-$min-md: "min-width: 992px";
+// $min-md: "min-width: 992px";
 $min-lg: "min-width: 1200px";
 $min-xl: "min-width: 1681px";
 
 // colors
+
 $color-text-base: #454545;
 $color-text-light: #999;
 $color-text-white: #FFF;
-
 $color-text-link: #F36777;
 $color-text-hover: #B30E21;
-
 $color-bg-black: #000;
 $color-bg-light: #f2f2f2;
 $color-bg-white: #FFF;
-
 $color-bg-key-base: #FFF8F8;
 $color-bg-key-dark: #FFEBEB;
 $color-bg-key-accent: #F36777;
@@ -24,17 +23,11 @@ $color-bg-key-accent: #F36777;
 $color-border-color: #FFCFD4;
 
 // darkmode
+
 $darktext-base: #EEE;
 $darktext-light: #AAA;
-
-$darktext-link: #F36777;
-$darktext-hover: #B30E21;
-
 $darkbg-light: #333;
 $darkbg-white: #2C2C2C;
-
 $darkbg-key-base: #1B2021;
 $darkbg-key-dark: #000;
-$darkbg-key-accent: #F36777;
-
 $darkborder-mono: #555;
