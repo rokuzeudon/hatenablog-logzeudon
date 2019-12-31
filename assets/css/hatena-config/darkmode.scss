@@ -1,0 +1,80 @@
+// ダークモード配色
+@media (prefers-color-scheme: dark) {
+  body,
+  .entry-title a,
+  .entry-title a:hover,
+  ul.table-of-contents a,
+  .related-entries-title-link,
+  .share-btn {
+    color: $color_dark-text-base;
+  }
+  .date a,
+  .urllist-date-link a,
+  .related-entries-date-link a,
+  .page-entry .pager-prev ::before,
+  .page-entry .pager-next ::after,
+  .entry-content blockquote::before,
+  .entry-content blockquote::after,
+  .hatena-module-title,
+  .page-about dt,
+  .author-id {
+    color: $color_dark-text-gray;
+  }
+  .entry-content blockquote {
+    background: $color_dark-bg-gray;
+  }
+  body,
+  .comment-box ul li,
+  .search-form,
+  .search-result-form,
+  .gnav-item a,
+  .share-btn {
+    background: $color_dark-bg-white;
+  }
+  .header-image-only #blog-title,
+  #top-editarea,
+  .entry-content pre,
+  .entry-content .hatena-asin-detail,
+  .entry-content .itunes-embed,
+  ul.table-of-contents,
+  .comment-box,
+  #bottom-editarea,
+  .page-about dl {
+    background: $color_dark-bg-key1;
+  }
+  .author-message,
+  ul.table-of-contents a:hover {
+    background: $color_dark-bg-key2;
+  }
+  .author-message::before {
+    border-right: .7em solid $color_dark-bg-key2;
+  }
+  .entry-content pre {
+    border: 1px solid $color_dark-border;
+  }
+  .search-form,
+  .search-result-form {
+    border: 1px solid $color_dark-border;
+  }
+  .search-module-button,
+  .search-result-form .search-result-button {
+    background: transparent url("//data.rokuzeudon.com/blog/img/icn-search-white.svg") no-repeat center center/40%;
+  }
+  @include min-sm {
+    #top-box {
+      border-bottom: 2px solid $color_dark-bg-key2;
+    }
+  }
+
+  // box-shadowを消す
+  .gnav-item a,
+  .page-entry img,
+  .comment-box ul li,
+  .mainimage,
+  .share-btn,
+  .share-btn:hover,
+
+   {
+    box-shadow: none;
+  }
+}
