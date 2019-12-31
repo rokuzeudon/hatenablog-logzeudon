@@ -68,13 +68,13 @@
 
   // box-shadowを消す
   .gnav-item a,
+  .gnav-item a:hover,
   .page-entry img,
   .comment-box ul li,
   .mainimage,
   .share-btn,
-  .share-btn:hover,
-
-   {
+  .share-btn:hover {
     box-shadow: none;
   }
+
 }
