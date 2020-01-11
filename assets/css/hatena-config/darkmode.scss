@@ -84,4 +84,9 @@
     background-color: none;
   }
 
+  // 検索窓入力中の文字を白く（はてなデフォルトで文字色が指定されているので解除する）
+  .search-result-form .search-result-input {
+    color: inherit;
+  }
+
 }
