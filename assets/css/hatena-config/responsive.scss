@@ -131,7 +131,7 @@
 
   // 記事詳細 メインイメージ
   .page-entry .entry-header {
-    padding: 22rem 0 0;
+    padding: 23rem 0 0;
   }
   .mainimage {
     height: 22rem;
@@ -148,6 +148,7 @@
 
   // 記事詳細 記事タイトルの文字サイズ
   .page-entry .entry-title {
+    margin: .25em 0 .4em;
     font-size: 1.8rem;
   }
 
