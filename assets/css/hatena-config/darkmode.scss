@@ -77,4 +77,11 @@
     box-shadow: none;
   }
 
+  // codeを本文中で判別できるようにする
+  .entry-content code {
+    color: #51cfcf;
+    border: 1px solid rgba(81, 207, 207, .6);
+    background-color: none;
+  }
+
 }
