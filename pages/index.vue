@@ -1,5 +1,6 @@
 <template lang="pug">
   .page-index.header-image-only.page-archive.globalheader-off
+    c_GlobalHeader
     #container
       #container-inner
         //- header
@@ -23,4 +24,5 @@
                       a(href="#" rel="next") 次のページ
             c_Box2
         c_BottomEditarea
+    c_GlobalFooter
 </template>

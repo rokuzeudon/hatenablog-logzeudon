@@ -1,5 +1,6 @@
 <template lang="pug">
   .page-entry.header-image-only.globalheader-off
+    c_GlobalHeader
     #container
       #container-inner
         //- header
@@ -51,7 +52,7 @@
                           img.mv(title="" src="//data.rokuzeudon.com/blog/img/bootstrap-xd.svg" alt="AdobeXDで使えるBootstrap4のテンプレートデータをつくってみた（Mac向け）")
                         p テキストが入ります
                         ul.table-of-contents
-                          li 
+                          li
                             a(href="#heading1") 大見出し
                             ul
                               li
@@ -219,4 +220,5 @@
                 #box1-inner
             c_Box2
         c_BottomEditarea
+    c_GlobalFooter
 </template>
