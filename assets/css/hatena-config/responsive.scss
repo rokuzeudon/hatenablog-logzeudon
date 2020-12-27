@@ -40,7 +40,7 @@
   #content {
     overflow-y: scroll;
     -ms-overflow-style: none;
-    height: calc(100vh - 2rem);
+    height: calc(100vh - 2rem - 37px);
   }
   // パンくずがないページの調整
   .page-index #container-inner,
@@ -52,7 +52,7 @@
   }
   .page-index #content,
   .page-about #content {
-    height: 100vh;
+    height: calc(100vh - 37px);
   }
 
   // ヘッダー画像のサイズ調整
